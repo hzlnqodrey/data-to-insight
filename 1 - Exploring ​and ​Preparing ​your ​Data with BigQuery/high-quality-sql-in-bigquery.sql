@@ -111,7 +111,7 @@ ORDER BY ein_count DESC
             a. Dates (datetime)
                 -> store in universal time format. Allowable range: 0001-01-01 00:00:00 to 9999-12-31 23:59:59.999999
         4. Other
-            a. Bollean (Y/N)
+            a. Boolean (Y/N)
             b. Array [`apple`, `bear`]
             c. Struct <apple string>
 */
@@ -161,7 +161,7 @@ EXTRACT(YEAR FROM
     ) = 2014
 LIMIT 10
 
-#######################################################################################################
+##############################################################################################################################
 
 /* Date function - PARSE_DATETIME() */
 
@@ -184,4 +184,20 @@ LIMIT 10
 
 
 */
+
+
+##############################################################################################################################
+
+/* Lanjutan: String Manipulation Format/Values with string function */
+/* REMEMBER -> SMF is just for Stylish purposes or Data Visualization, You don't want to use in Data Transform/Manipulation */
+
+- CONCAT("1234", "567") /* return a STRING */
+    -> "1234567"
+- ENDS_WITH("Apple" , "e") /* return a BOOLEAN */
+    -> true
+- LOWER("Apple") /* return a STRING */
+    -> "apple"
+- REGEXP_CONTAINS("Lunchbox", r"^*box$") /* return a BOOLEAN */
+    -> true
+
 
