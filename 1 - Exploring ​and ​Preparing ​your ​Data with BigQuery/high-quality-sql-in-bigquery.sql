@@ -5,6 +5,8 @@ FROM `project.dataset.table`
 ORDER BY revenue DESC 
 LIMIT 10 # make sure you limit your query, because otherwise it just waste of many byte amounts of processing
 
+# FORMAT() function is String Manipulation Function that make your data visualization stylish
+
 #standardSQL - Income
 SELECT
     (totrevenue - totfuncexpns) AS income
@@ -38,4 +40,26 @@ WHERE operationschools170cd = 'Y'
 ORDER BY totrevenue DESC
 LIMIT 10
 # why didn't we write this as is_school = 'Y'?
-# -> because the AS (Alias) is_school is not known by the filter, because SQL programming read the FROM and then the FILTER Section (WHERE, GROUP BY, ORDER BY, LIMIT), but WHERE is the exception, he cannot be placed by ALIAS or AS
+# -> because the AS (Alias) is_school is not known by the filter, because SQL programming read the FROM and then the FILTER Section (WHERE, GROUP BY, ORDER BY, LIMIT), but WHERE is the exception, he cannot be placed by ALIAS or AS'
+
+#######################################################################################################
+
+# Aggregation function - SUM() COUNT() AVG() MAX() ROUND() etc
+
+#standardSQL
+SELECT
+    SUM(totrevenue) AS total_2015_revenue,
+    AVG(totrevenue) AS avg_revenue,
+    COUNT(ein) AS nonprofit,
+    COUNT(DISTINCT ein) AS nonprofit_distinct,
+    MAX(noemplyeesw3cnt) AS num_employees
+FROM `bigquery-public-data.irs_990.irs_990_2015`
+
+#standardSQL - Embed function inside of other function
+SELECT
+    SUM(totrevenue) AS total_2015_revenue,
+    ROUND(AVG(totrevenue), 2) AS avg_revenue, # round float point value into just 2 float number behind point [xxxxx.xx]
+    COUNT(ein) AS nonprofit,
+    COUNT(DISTINCT ein) AS nonprofit_distinct,
+    MAX(noemplyeesw3cnt) AS num_employees
+FROM `bigquery-public-data.irs_990.irs_990_2015`
