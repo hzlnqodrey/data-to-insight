@@ -201,3 +201,26 @@ LIMIT 10
     -> true
 
 
+/* Wildcare filters with LIKE */
+
+/* Searching for nonprofits with 'help' in their name */
+#standardSQL
+SELECT
+    ein,
+    name,
+FROM `bigquery-public-data.irs_990.irs_990_2015`
+WHERE 
+    LOWER(name) LIKE '%help%'
+LIMIT 10;
+
+/* e.g LIKE operators
+
+    if
+        - 'help%' then the including word is in the front of name/sentece
+        - '%help%' then the including word is in between of name/sentence
+        - '%help' then the including word is in the end of name/sentence
+
+
+*/
+
+
