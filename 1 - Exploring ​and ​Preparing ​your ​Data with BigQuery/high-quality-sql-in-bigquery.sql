@@ -116,6 +116,17 @@ ORDER BY ein_count DESC
             c. Struct <apple string>
 */
 
+# Using CAST to convert between data types
+- SELECT CAST("12345" AS INT64)
+    -> 12345
+- SELECT CAST("2018-09-24" AS DATE)
+    -> 2018-09-24 (literal DATE format)
+- SELECT CAST(1122334455 AS STRING)
+    -> "1122334455"
+- SELECT SAFE_CAST("apple" AS INT64)
+    -> NULL  
+
+
 /* Example solution: INVOKE parse, convert, filter for 2014 tax period */
 #standardSQL
 SELECT
