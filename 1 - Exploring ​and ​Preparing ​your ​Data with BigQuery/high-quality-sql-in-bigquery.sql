@@ -83,3 +83,17 @@ FROM table
 GROUP BY company
 
 /* Locate duplicate records with COUNT + GROUPBY */
+
+/* WHERE clause is filtering rows pre-aggregation */
+/* HAVING clause is filtering rows post-aggregation, we can USE ALIAS or AS in HAVING clause */
+
+/* Filter Aggregation with HAVING clause */
+SELECT
+    ein, # not aggregated
+    COUNT(ein) AS ein_count # aggregated
+FROM `bigquery-public-data.irs_990.irs_990_2015`
+GROUP BY ein
+HAVING ein_count > 1
+ORDER BY ein_count DESC
+
+
