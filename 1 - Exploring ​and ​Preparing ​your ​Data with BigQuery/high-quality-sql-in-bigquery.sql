@@ -96,6 +96,22 @@ GROUP BY ein
 HAVING ein_count > 1
 ORDER BY ein_count DESC
 
+
+#######################################################################################################
+/* Data type conversion function - CAST() : integer to string, string to integer 
+    
+    Comparing BigQuery data types:
+
+        1. Numeric Data
+            a. Integer (int64)
+            b. Float (float64)
+        2. String Data
+            a. Strings (using single quotes '')
+        3. Dates
+            a. Dates (datetime)
+                -> store in universal time format. Allowable range: 0001-01-01 00:00:00 to 9999-12-31 23:59:59.999999
+*/
+
 /* Example solution: INVOKE parse, convert, filter for 2014 tax period */
 #standardSQL
 SELECT
@@ -109,4 +125,6 @@ EXTRACT(YEAR FROM
     ) = 2014
 LIMIT 10
 
+#######################################################################################################
+/* Date function - PARSE_DATETIME() */
 
