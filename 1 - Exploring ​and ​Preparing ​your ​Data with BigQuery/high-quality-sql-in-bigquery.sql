@@ -126,6 +126,27 @@ ORDER BY ein_count DESC
 - SELECT SAFE_CAST("apple" AS INT64)
     -> NULL  
 
+/*  what is NULL value?
+    -> It is absence of data or an empty set
+    -> NULLs are valid values
+    -> NULL is ot the same as "" or a valid blank string value
+*/
+
+# Handle NULL values with extreme CARE
+#standardSQL
+SELECT
+    ein,
+    street,
+    city,
+    state,
+    zip
+FROM 
+    `bigquery-public-data.irs_990.irs_990_2015`
+WHERE
+    state IS NULL /* NULL values cannot be equated to and thus have a special IS NULL and IS NOT NULL test */
+LIMIT 10;
+
+
 
 /* Example solution: INVOKE parse, convert, filter for 2014 tax period */
 #standardSQL
