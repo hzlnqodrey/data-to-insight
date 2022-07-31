@@ -1,0 +1,101 @@
+List the cities with the most transactions with your ecommerce site
+
+Troubleshoot ordering, calculated fields, and filtering after aggregating errors
+Complete the partially written query:
+
+SELECT
+geoNetwork_city,
+totals_transactions,
+COUNT( DISTINCT fullVisitorId) AS distinct_visitors
+FROM
+`data-to-insights.ecommerce.rev_transactions`
+GROUP BY
+
+-> Possible solution:
+SELECT
+geoNetwork_city,
+COUNT(totals_transactions) AS transactions,
+COUNT( DISTINCT fullVisitorId) AS distinct_visitors
+FROM
+`data-to-insights.ecommerce.rev_transactions`
+GROUP BY geoNetwork_city
+ORDER BY transactions DESC
+
+-> result: Open Troubleshooting Common SQL Errors with BigQuery v1.5 - Challenge 1.xlsx 
+
+====================================================================================================================
+Update your query and create a new calculated field to return the average number of products per order by city.
+
+SELECT
+geoNetwork_city,
+COUNT(totals_transactions) AS transactions,
+COUNT( DISTINCT fullVisitorId) AS distinct_visitors
+FROM
+`data-to-insights.ecommerce.rev_transactions`
+GROUP BY geoNetwork_city
+ORDER BY transactions DESC
+
+-> Possible solution:
+SELECT
+geoNetwork_city,
+SUM(totals_transactions) AS transactions,
+COUNT( DISTINCT fullVisitorId) AS distinct_visitors,
+SUM(totals_transactions) / COUNT ( DISTINCT fullVisitorId) AS avg_product_ordered
+FROM
+`data-to-insights.ecommerce.rev_transactions`
+GROUP BY geoNetwork_city
+ORDER BY avg_product_ordered DESC
+LIMIT 10
+
+====================================================================================================================
+
+Filter your aggregated results to only return cities with more than 20 avg_products_ordered.
+
+Possible solution
+
+#standardSQL
+SELECT
+geoNetwork_city,
+SUM(totals_transactions) AS total_products_ordered,
+COUNT( DISTINCT fullVisitorId) AS distinct_visitors,
+SUM(totals_transactions) / COUNT( DISTINCT fullVisitorId) AS avg_products_ordered
+FROM
+`data-to-insights.ecommerce.rev_transactions`
+GROUP BY geoNetwork_city
+HAVING avg_products_ordered > 20
+ORDER BY avg_products_ordered DESC
+
+
+====================================================================================================================
+Find the total number of products in each product category
+
+Find the top selling products by filtering with NULL values
+
+What's wrong with the following query? How can you fix it?
+
+#standardSQL
+SELECT hits_product_v2ProductName, hits_product_v2ProductCategory
+FROM `data-to-insights.ecommerce.rev_transactions`
+GROUP BY 1,2
+
+Possible solution:
+SELECT
+    COUNT(hits_product_v2ProductName) as number_of_products,
+    hits_product_v2ProductCategory
+FROM `data-to-insights.ecommerce.rev_transactions`
+WHERE hits_product_v2ProductName IS NOT NULL
+GROUP BY hits_product_v2ProductCategory
+ORDER BY number_of_products DESC
+
+Update the previous query to only count distinct products in each product category.
+
+Possible solution:
+
+SELECT
+COUNT( DISTINCT hits_product_v2ProductName) as number_of_products,
+hits_product_v2ProductCategory
+FROM `data-to-insights.ecommerce.rev_transactions`
+WHERE hits_product_v2ProductName IS NOT NULL
+GROUP BY hits_product_v2ProductCategory
+ORDER BY number_of_products DESC
+
