@@ -72,3 +72,11 @@ FROM `bigquery-public-data.irs_990.irs_990_2015`
 GROUP BY ein
 ORDER BY ein_count DESC
 
+# Pitfall: FORGETTING to Group Non-Aggregated Fields
+# Do not forget to use a GROUP BY if you are using mix of aggregated and non-aggregated fields
+#standardSQL
+SELECT
+    company,
+    SUM(revenue) AS total,
+FROM table
+GROUP BY company
