@@ -5,7 +5,7 @@ FROM `project.dataset.table`
 ORDER BY revenue DESC 
 LIMIT 10 # make sure you limit your query, because otherwise it just waste of many byte amounts of processing
 
-# FORMAT() function is String Manipulation Function that make your data visualization stylish
+/* # FORMAT() function is String Manipulation Function that make your data visualization stylish */
 
 #standardSQL - Income
 SELECT
@@ -15,7 +15,7 @@ WHERE income > 0
 ORDER BY income DESC
 LIMIT 10
 
-#standardSQL - Add new fields in SELECT clause to return more data.
+#standardSQL /* Add new fields in SELECT clause to return more data. */
 SELECT
     totrevenue AS revenue,
     ein, # employer identification number
@@ -25,12 +25,12 @@ ORDER BY totrevenue DESC
 LIMIT 10
 
 
-# Pitfall : Using SELECT * to return all columns
+/* # Pitfall : Using SELECT * to return all columns
 # AVOID using * (star) to return all columns
-# -> Selecting only the columns you need greatly increases query speed and helps with readibility
+# -> Selecting only the columns you need greatly increases query speed and helps with readibility */
 
 
-#standardSQL - Filter Rows using the WHERE clause
+#standardSQL /* Filter Rows using the WHERE clause */
 SELECT
     totrevenue AS revenue,
     ein, # employer identification number
@@ -44,7 +44,7 @@ LIMIT 10
 
 #######################################################################################################
 
-# Aggregation function - SUM() COUNT() AVG() MAX() ROUND() etc
+# Aggregation function /* SUM() COUNT() AVG() MAX() ROUND() etc */
 
 #standardSQL
 SELECT
@@ -64,7 +64,7 @@ SELECT
     MAX(noemplyeesw3cnt) AS num_employees
 FROM `bigquery-public-data.irs_990.irs_990_2015`
 
-#standardSQL - Create Aggregation groupings with GROUP BY
+#standardSQL /* Create Aggregation groupings with GROUP BY */
 SELECT
     ein, # not aggregated
     COUNT(ein) AS ein_count # aggregated
@@ -72,11 +72,14 @@ FROM `bigquery-public-data.irs_990.irs_990_2015`
 GROUP BY ein
 ORDER BY ein_count DESC
 
-# Pitfall: FORGETTING to Group Non-Aggregated Fields
-# Do not forget to use a GROUP BY if you are using mix of aggregated and non-aggregated fields
+/* Pitfall: FORGETTING to Group Non-Aggregated Fields
+# Do not forget to use a GROUP BY if you are using mix of aggregated and non-aggregated fields */
+
 #standardSQL
 SELECT
     company,
     SUM(revenue) AS total,
 FROM table
 GROUP BY company
+
+/* Locate duplicate records with COUNT + GROUPBY */
