@@ -162,5 +162,26 @@ EXTRACT(YEAR FROM
 LIMIT 10
 
 #######################################################################################################
+
 /* Date function - PARSE_DATETIME() */
+
+/* YYYY-MM-DDis the expected format for dates */
+
+/* 
+
++-----------------------------------------------------------------------------------------------------------------------+
+| Date Function                                         | Result                                                        |
++-----------------------------------------------------------------------------------------------------------------------+
+| CURRENT_DATE([time_zone])                             | Today's Date                                                  |
+| EXTRACT(year FROM your_date_field)                    | Year of Date (try changing to Month, Date, Week, etc.)        |
+| DATE_ADD(DATE "2008-12-25", INTERVAL 5 DAY)           | Adds an interval of time                                      |
+| SELECT DATE_SUB(DATE "2008-12-25", INTERVAL 5 DAY)    | Substract an interval of time                                 |
+| DATE_DIFF(DATE "2010-07-07", DATE "2008-12-25", DAY)  | Substract two dates and RETURN the interval                   |
+| DATE_TRUNC(DATE '2008-12-25', MONTH)                  | Truncates the date (e.g 2008-12-01)                           |
+| FORMAT_DATETIME()                                     | Formats an existing date to a different date string format    |
+| PARSE_DATETIME() #parsing                             | Example: Turn "12/01/2017" to a proper date "2017-12-01"      |
++-----------------------------------------------------------------------------------------------------------------------+
+
+
+*/
 
