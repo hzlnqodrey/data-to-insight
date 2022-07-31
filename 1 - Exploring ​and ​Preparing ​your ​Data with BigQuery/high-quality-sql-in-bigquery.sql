@@ -63,3 +63,12 @@ SELECT
     COUNT(DISTINCT ein) AS nonprofit_distinct,
     MAX(noemplyeesw3cnt) AS num_employees
 FROM `bigquery-public-data.irs_990.irs_990_2015`
+
+#standardSQL - Create Aggregation groupings with GROUP BY
+SELECT
+    ein, # not aggregated
+    COUNT(ein) AS ein_count # aggregated
+FROM `bigquery-public-data.irs_990.irs_990_2015`
+GROUP BY ein
+ORDER BY ein_count DESC
+
