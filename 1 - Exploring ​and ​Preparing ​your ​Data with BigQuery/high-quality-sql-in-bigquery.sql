@@ -15,7 +15,7 @@ LIMIT 10
 
 # standardSQL - Add new fields in SELECT clause to return more data.
 SELECT
-    totrevenue AS revenue
+    totrevenue AS revenue,
     ein, # employer identification number
     operationschools170cd AS is_school,
 FROM `bigquery-public-data.irs_990.irs_990_2015`
