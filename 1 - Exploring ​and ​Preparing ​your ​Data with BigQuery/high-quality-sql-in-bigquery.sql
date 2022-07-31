@@ -110,6 +110,10 @@ ORDER BY ein_count DESC
         3. Dates
             a. Dates (datetime)
                 -> store in universal time format. Allowable range: 0001-01-01 00:00:00 to 9999-12-31 23:59:59.999999
+        4. Other
+            a. Bollean (Y/N)
+            b. Array [`apple`, `bear`]
+            c. Struct <apple string>
 */
 
 /* Example solution: INVOKE parse, convert, filter for 2014 tax period */
