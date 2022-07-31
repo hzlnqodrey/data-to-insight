@@ -96,4 +96,17 @@ GROUP BY ein
 HAVING ein_count > 1
 ORDER BY ein_count DESC
 
+/* Example solution: INVOKE parse, convert, filter for 2014 tax period */
+#standardSQL
+SELECT
+    ein,
+    tax_pd,
+    PARSE_DATE('%Y%m', CAST(tax_pd AS STRING)) AS tax_period
+FROM `bigquery-public-data.irs_990.irs_990_2015`
+WHERE
+EXTRACT(YEAR FROM
+    PARSE_DATE('%Y%m', CAST(tax_pd AS STRING))
+    ) = 2014
+LIMIT 10
+
 
