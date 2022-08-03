@@ -1,0 +1,11 @@
+5 Principles of Dataset Integrity:
+
+1. Validity
+
+2. Accuracy
+
+3. Completeness
+
+4. Consistency
+
+5. Uniformity
