@@ -1,6 +1,6 @@
 5 Principles of Dataset Integrity:
 
-    1. Validity
+    1. Validity (Data conforms to your business rules)
             Challenges:
             - Out of Range
             - Empty Fields
@@ -13,10 +13,7 @@
                 -> SQL Conditionals: CASE WHEN, IF()
         [+ #5 +] Require Primary Keys / relational constraints in upstream source of system
 
-
-
-
-    2. Accuracy
+    2. Accuracy (Data conforms to an objective true value)
             Challenges:
             - Lookup datasets
             - Do not exists
@@ -27,13 +24,36 @@
                 -> SQL: IN() with a subquery or JOIN 
          
 
-    3. Completeness
+    3. Completeness (Create, save, and store datasets)
             Challenges:
             - Missing Data
 
         [+ #1 +] Thoroughly explore the existing dataset shape and skew and look for missing data
+        [+ #2 +] Enrich the existing datasets with others using UNIONs and JOINs
+                -> SQL: UNION, JOIN
+                -> Example: Multiple years of historical data are available for analysis
+
+    4. Consistency (Derive insights from data)
+            Challenges:
+            - Duplicate records
+            - Concurrency issues
+        
+        [+ #1 +] Store one fact in one place and us IDs to Lookup
+        [+ #2 +] Use string functions to clean data
+                -> SQL: PARSE_DATA()
+                        SUBSTR()
+                        REPLACE()
+
+    5. Uniformity (Explore and Present data)
+            Challenges:
+            - Same units of measurements
+
+        [+ #1 +] Documents and comments your approach 
+        [+ #2 +] Use FORMAT() to clearly indicate units
+        [+ #3 +] CAST() data types to the same formats and digits
+        [+ #4 +] Label all visualizations appropriately
 
 
-    4. Consistency
+        
 
-    5. Uniformity
+        
