@@ -12,11 +12,20 @@
         [+ #4 +] Check and Filter for allowable range values
                 -> SQL Conditionals: CASE WHEN, IF()
         [+ #5 +] Require Primary Keys / relational constraints in upstream source of system
-        
+
 
 
 
     2. Accuracy
+            Challenges:
+            - Lookup datasets
+            - Do not exists
+        
+        [+ #1 +] Create test cases or calculated fields to check values
+                -> SQL: (quantity_ordered * item_values) AS sub_total
+        [+ #2 +] Lookup values againts an objective reference of dataset
+                -> SQL: IN() with a subquery or JOIN 
+         
 
     3. Completeness
 
