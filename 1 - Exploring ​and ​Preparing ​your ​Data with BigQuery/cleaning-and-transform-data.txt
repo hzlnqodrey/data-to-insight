@@ -28,6 +28,11 @@
          
 
     3. Completeness
+            Challenges:
+            - Missing Data
+
+        [+ #1 +] Thoroughly explore the existing dataset shape and skew and look for missing data
+
 
     4. Consistency
 

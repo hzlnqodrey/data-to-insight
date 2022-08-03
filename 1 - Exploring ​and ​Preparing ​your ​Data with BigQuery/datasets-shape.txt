@@ -1,0 +1,15 @@
+Understanding datasets shape
+
+    1. Small datasets
+
+    2. Wide but short (too many colums but have a low records)
+        -> to many points to research, but so little data that consectively collected
+        -> summary: too many columns and low row data
+
+    3. Taller than wide (too many records but have a few colums)
+        -> you wanna enrich your data by giving the exact prediction that you wanna build
+        -> so if you just don't have enough fields/data point, you can't summary your data/predict data accurately
+
+    4. Even Height and Width (Perfect Scenario)
+        -> Data is properly researched through many aspects
+        -> fields are on points
