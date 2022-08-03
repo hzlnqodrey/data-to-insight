@@ -1,11 +1,25 @@
 5 Principles of Dataset Integrity:
 
-1. Validity
+    1. Validity
+            Challenges:
+            - Out of Range
+            - Empty Fields
+            - Data Mismatch
 
-2. Accuracy
+        [+ #1 +] Setup Field data type constraints
+        [+ #2 +] Specify as NULLABLE or REQUIRED
+        [+ #3 +] Proactively check for NULL values
+        [+ #4 +] Check and Filter for allowable range values
+                -> SQL Conditionals: CASE WHEN, IF()
+        [+ #5 +] Require Primary Keys / relational constraints in upstream source of system
+        
 
-3. Completeness
 
-4. Consistency
 
-5. Uniformity
+    2. Accuracy
+
+    3. Completeness
+
+    4. Consistency
+
+    5. Uniformity
