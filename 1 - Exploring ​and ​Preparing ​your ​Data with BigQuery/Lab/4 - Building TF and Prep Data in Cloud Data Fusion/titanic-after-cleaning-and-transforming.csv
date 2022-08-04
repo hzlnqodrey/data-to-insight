@@ -1,0 +1,501 @@
+PassengerId,Survived,Pclass,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked,Last_Name,Salutation,First_Name,Today_Fare,id
+264,0,1,male,40,0,0,112059,0,B94,S,Harrison, Mr, Bumkyyp,1,af7c6e59-5b6f-43d7-bb74-e4a7dde3247f
+807,0,1,male,39,0,0,112050,0,A36,S,Andrews, Mr, Blekyr Pc,1,f4608192-90b5-418d-a95f-1b73179e92e7
+823,0,1,male,38,0,0,19972,0,none,S,Reuchlin, Jonkheer, Bumk Tyyczi,1,e3fa79d2-cf7d-43f3-9787-50c25a9b532c
+873,0,1,male,33,0,0,695,5,B51 B53 B55,S,Carlsson, Mr, Blekt Ypoz,118.029,663cc08f-01c8-4625-ba64-1786795cdd74
+546,0,1,male,64,0,0,693,26,none,S,Nicholson, Mr, Almkyr Ycziww,609.5508,5ed194bc-958c-446c-b088-69e20e17f425
+631,1,1,male,80,0,0,27042,30,A23,S,Barkworth, Mr, Almytryc Ziwwy Dyggoc,703.174,525ca213-a207-451f-a5bc-1eba4f3efa04
+783,0,1,male,29,0,0,113501,30,D6,S,Long, Mr, Bumkyr Pcosy,703.174,0bc47150-ef7b-4727-b0c1-fc028b26ec4b
+888,1,1,female,19,0,0,112053,30,B42,S,Graham, Miss, Bumkyryc Osywr,703.174,641058ec-6e3b-4a3a-bd8e-641733722d77
+890,1,1,male,26,0,0,111369,30,C148,C,Behr, Mr, Bumk Typozs,703.174,565b43a2-74d7-4a18-a8e8-c125f34ac276
+210,1,1,male,40,0,0,112277,31,A31,C,Blank, Mr, Bumky,726.5798,eddd5f60-a843-4a21-9e30-62348114f8ad
+843,1,1,female,30,0,0,113798,31,none,C,Serepeca, Miss, Aumytry,726.5798,5e4e124e-673b-4892-ac1c-f851bd5541cb
+36,0,1,male,42,1,0,113789,52,none,S,Holverson, Mr, Alekyrpoz Iwwyd,1218.1016,f6cfa9dc-7cc8-403e-affc-29f93544f3d8
+111,0,1,male,47,0,0,110465,52,C110,S,Porter, Mr, Bumkyr Pcoswyrdyig,1218.1016,ee696e37-3ad8-484d-a55c-a87a0a7153dd
+384,1,1,female,35,1,0,113789,52,none,S,Holverson, Mrs, Alekyrpoz Iwwyd (Tigo Ybeli Kibfuq),1218.1016,50c5aec0-4dcc-4640-9157-19b6f53c6e6d
+672,0,1,male,31,1,0,F.C. 12750,52,B71,S,Davidson, Mr, Blektryc,1218.1016,f7761f1e-ffaf-4b6a-8559-18dba510d073
+713,1,1,male,48,1,0,19996,52,C126,S,Taylor, Mr, Almyt Rycziy,1218.1016,b6c7da17-f09b-46fb-9571-a81c0fc8d88c
+62,1,1,female,38,0,0,113572,80,B28,,Icard, Miss, Alekyy,1873.464,c1e703e9-1ac6-4c63-9d4d-4d571f7919ca
+830,1,1,female,62,0,0,113572,80,B28,,Stone, Mrs, Buekty Pozsyw (Rutggo Ybelik),1873.464,87dd8a40-22f8-48a2-80d1-bbf008cef06b
+391,1,1,male,36,1,2,113760,120,B96 B98,S,Carter, Mr, Bumkyyp Ozsywr,2809.696,f2550860-d1eb-478d-9757-58a13359ebca
+436,1,1,female,14,1,2,113760,120,B96 B98,S,Carter, Miss, Bumyty Pozs,2809.696,fd112b97-2473-4bca-85fa-1a98603146f6
+764,1,1,female,36,1,2,113760,120,B96 B98,S,Carter, Mrs, Bumkyyp Ozsywr (Dyguty Belg),2809.696,f6d98b24-1d5e-4d6f-bae9-3bb9cbc6d28b
+803,1,1,male,11,1,2,113760,120,B96 B98,S,Carter, Master, Bumkyyp Cziwwrut IU,2809.696,d77c99c3-8c9a-4b30-b7b3-fd499bf0455b
+584,0,1,male,36,0,0,13049,40.125,A10,C,Ross, Mr, Bumk Typo,940.157725,22e285c1-517b-410e-8f45-a6e7c5e44a24
+463,0,1,male,47,0,0,111320,38.5,E63,S,Gee, Mr, Almkyr P,902.1233,f4bbd15c-3677-42cb-bd41-802d70bf9afa
+521,1,1,female,30,0,0,12749,93.5,B73,S,Perreault, Miss, Almy,2189.4423,ed512b39-763d-40b7-befd-82d9c9cc81f0
+821,1,1,female,52,1,1,12749,93.5,B69,S,Hays, Mrs, Blektyp Coswyrdy (Ggoci Fagkibfd Qfyhw),2189.4423,b054b172-a9cc-4570-8f9b-f556d6ddd10a
+312,1,1,female,18,2,2,PC 17608,262.375,B57 B59 B63 B66,C,Ryerson, Miss, Aleky Rycoi,6142.096775,295430a6-90e1-416e-90cc-82ee1589e3f4
+743,1,1,female,21,2,2,PC 17608,262.375,B57 B59 B63 B66,C,Ryerson, Miss," Bumyt Rycziw ""Wydyggo""",6142.096775,c4f5edf3-4352-4b7f-a0f8-38a6e87e337e
+378,0,1,male,27,0,2,113503,211.5,C82,C,Widener, Mr, Bumky Ypcosw,4951.3267,3c47b831-8427-4fb7-a690-d07339eb916f
+28,0,1,male,19,3,2,19950,263,C23 C25 C27,S,Fortune, Mr, Blektyp Oziwyrdyg,6156.7254,b2ac66bc-bccd-4295-be4e-f13df6e8317c
+89,1,1,female,23,3,2,19950,263,C23 C25 C27,S,Fortune, Miss, Bumyt Rycos,6156.7254,80b7ea42-c667-4f4c-a6cf-21e983f45750
+342,1,1,female,24,3,2,19950,263,C23 C25 C27,S,Fortune, Miss, Aleky Ypoziwyrd,6156.7254,69703566-eb4b-4777-bde2-104ab5ce7035
+439,0,1,male,64,1,4,19950,263,C23 C25 C27,S,Fortune, Mr, Bumk,6156.7254,72f39dac-54a6-4eec-b1d6-fe35233de22b
+450,1,1,male,52,0,0,113786,30.5,C104,S,Peuchen, Major, Almkyr Pozswyy,714.8769,62181d95-a497-4fd3-9cb2-9e7a064b9b51
+493,0,1,male,55,0,0,113787,30.5,C30,S,Molson, Mr, Bumky Ryczsywr,714.8769,5f7fe283-b443-4eef-a8bd-ee0acfdaa2f6
+608,1,1,male,27,0,0,113804,30.5,none,S,Daniel, Mr, Bumytr Pozsyyrd,714.8769,ffc8706a-971e-4eea-9fad-b9cf93e46a7e
+633,1,1,male,32,0,0,13214,30.5,B50,C,Stahelin-Maeglin, Dr, Bum,714.8769,039284da-0515-448a-9782-e6b9bd886bf4
+357,1,1,female,22,0,1,113505,55,E33,S,Bowerman, Miss, Almyy Ypozs,1288.319,eb01ecf9-dab6-41d1-8d1c-7b037984e8db
+691,1,1,male,31,1,0,17474,57,B20,S,Dick, Mr, Almytr Ycziyw,1335.1306,01f5bda1-3dbf-41c0-8cc2-a685a4ff2072
+782,1,1,female,17,1,0,17474,57,B20,S,Dick, Mrs, Almytr Ycziyw (Ruti Gocbelgyi),1335.1306,0b6251c9-4ff0-4f3a-b12f-393ae0fcd7ee
+225,1,1,male,38,1,0,19943,90,C93,S,Hoyt, Mr, Blekyrycz Sywruygg,2107.522,7644c576-8c0e-4f7a-8370-8f32fe6b4ac3
+246,0,1,male,44,2,0,19928,90,C78,Q,Minahan, Dr, Bumkyyp Ozsywr,2107.522,d22bbc8e-732c-4a95-bf07-8faa61dbc23d
+413,1,1,female,33,1,0,19928,90,C78,Q,Minahan, Miss, Bueky Y,2107.522,41748303-2085-4f36-b833-5c1e4e611f78
+487,1,1,female,35,1,0,19943,90,C93,S,Hoyt, Mrs, Blekyrycz Sywruygg (Tybe Agki Bodqy),2107.522,1f912a14-ec46-4afe-a0f1-b1ef733e91d1
+258,1,1,female,30,0,0,110152,86.5,B77,S,Cherry, Miss, Blekyr,2025.6017,d36bc437-40f4-45ae-92be-12eba30bc378
+505,1,1,female,16,0,0,110152,86.5,B79,S,Maioni, Miss, Bumytry,2025.6017,7f8da5ca-4747-458f-a635-40a36faff3a6
+760,1,1,female,33,0,0,110152,86.5,B77,S,Rothes, the Countess, al (Myty Poos Wyrdti Goyb-Elgyqbf),2025.6017,d07444ce-e4ae-4a76-858e-cdddea1356d2
+453,0,1,male,30,0,0,113051,27.75,C111,C,Foreman, Mr, Bumkyryc Ziwyrdygg,650.51095,19f7cdb5-8d18-42df-a954-8274f510dca0
+171,0,1,male,61,0,0,111240,33.5,B19,S,Van der hoef, Mr, Bumkyrp,785.0943,a457c42f-b656-4164-a9a9-ae76f1adb9e6
+24,1,1,male,28,0,0,113788,35.5,A6,S,Sloper, Mr, Bumkyyp Cziwwrut,831.9059,5414572d-7f27-406d-9fd0-7f0c86e0c6a4
+340,0,1,male,45,0,0,113784,35.5,T,S,Blackwell, Mr, Blektyp Coiww,831.9059,601f1637-3c58-41c0-a533-25104e298c07
+648,1,1,male,56,0,0,13213,35.5,A26,C,Simonius-Blumer, Col, Alektr Ycziww,831.9059,278d733e-7994-49b7-a1dc-087cd3e7af05
+540,1,1,female,22,0,2,13568,49.5,B39,C,Frolicher, Miss, Bumkyr Pozsywydti,1159.5871,9521bd86-8fe2-491f-a039-cd335008b058
+541,1,1,female,36,0,2,WE/P 5735,71,B22,S,Crosby, Miss, Bumkyyp C,1662.8118,ccb3e881-2590-4b48-88cc-fcc84c90acfe
+746,0,1,male,70,1,1,WE/P 5735,71,B22,S,Crosby, Capt, Almytr Pozsywr,1662.8118,b34b5bb1-94ab-437c-a529-41b92cbbf4f1
+367,1,1,female,60,1,0,110813,75.25,D37,C,Warren, Mrs, Blekt Rycziy (Yrdy Gutcie Agkibfuq),1762.28645,b2e61725-2754-4765-af44-9b3dce7c8f6b
+320,1,1,female,40,1,1,16966,134.5,E34,C,Spedden, Mrs, Blekyryc Oiwwyu (Tigtybelgy Qufdafh Hwydi),3149.0801,f3d9b84f-0078-4060-94fa-81d11eea9493
+338,1,1,female,41,0,0,16966,134.5,E40,C,Burns, Miss, Alekyrycz Sywrutig,3149.0801,9e986b59-6f8e-4112-9081-4e397cb700a1
+446,1,1,male,4,0,2,33638,81.8583,A34,S,Dodge, Master, Bumkyrpcos,1916.958998,1da938fe-8805-4da5-a5c0-54cda03f11b6
+35,0,1,male,28,1,0,PC 17604,82.1708,none,C,Meyer, Mr, Almyt Rycosw,1924.273311,55fd6341-2b87-4ed3-88f6-e22149965fec
+98,1,1,male,23,0,1,PC 17759,63.3583,D10 D12,C,Greenfield, Mr, Bumkyyp Coswwyd,1483.951698,6755beab-1333-4701-bb33-2cbec3480d67
+572,1,1,female,53,2,0,11769,51.4792,C101,S,Appleton, Mrs, Almytr Pozi (Wwydtigty Belgyq),1205.911859,2e669ef3-f3cb-44bb-8a3a-2b295419ee22
+330,1,1,female,16,0,1,111361,57.9792,B18,C,Hippach, Miss, Buek Typcziwy,1358.049559,39a6cb65-5423-4a31-b154-d382e97e266e
+524,1,1,female,44,0,1,111361,57.9792,B18,C,Hippach, Mrs, Bueyt Ypcosw (Yru Tigtyi Fagkquf),1358.049559,de772f5c-730c-427c-b02d-8a82b010502e
+55,0,1,male,65,0,1,113509,61.9792,B30,C,Ostby, Mr, Almytrycz Sywrutiut,1451.672759,93a8d584-be05-4bac-92dc-bf1480496b69
+319,1,1,female,31,0,2,36928,164.8667,C7,S,Wick, Miss, Bumy Typoziy,3859.837007,4ef5d2c4-d5b0-4563-a7dd-98397a9450fc
+857,1,1,female,45,1,1,36928,164.8667,none,S,Wick, Mrs, Buekty Pozsywr (Dygu Tybflgyqb),3859.837007,5e74afae-710e-408f-997d-01725377a37c
+370,1,1,female,24,0,0,PC 17477,69.3,B35,C,Aubart, Mme, Buektypo Ziywydy,1623.02194,aed77223-2239-43b4-bce1-d171ed4c090d
+642,1,1,female,24,0,0,PC 17477,69.3,B35,C,Sagesser, Mlle, Almy,1623.02194,d2fd2d53-6e20-4f10-81f4-4b3931747fb2
+573,1,1,male,36,0,0,PC 17474,26.3875,E25,S,Flynn, Mr," Bumk Yrpoz (""Iwwydt"")",618.6205475,8db5ff15-8377-44b8-80a5-50db2ef71cd3
+538,1,1,female,30,0,0,PC 17761,106.425,none,C,LeRoy, Miss, Bumkty,2491.962265,0d4e2df6-a3fa-4b20-814c-1855bea5f0e3
+545,0,1,male,50,1,0,PC 17761,106.425,C86,C,Douglas, Mr, Bumkyr Poziww,2491.962265,405e07bb-68dd-44c7-8163-57b86b1189fe
+274,0,1,male,37,0,1,PC 17596,29.7,C118,C,Natsch, Mr, Blektyp C,696.15226,4c01b55f-f5b1-4a0c-8941-0dbb29a0b440
+488,0,1,male,58,0,0,11771,29.7,B37,C,Kent, Mr, Almytr Yozsyw,696.15226,7be14f26-476d-4a33-bdb0-1481cbed4ea9
+854,1,1,female,16,0,1,PC 17592,39.4,D28,S,Lines, Miss, Bumy Typoziw,923.18852,a7aa428d-b257-4d30-b416-1b88b06cc00e
+514,1,1,female,54,1,0,PC 17603,59.4,none,C,Rothschild, Mrs, Bumkyr (Ycosywydt G,1391.30452,77803cda-d778-4237-876f-ae5f3913a785
+435,0,1,male,50,1,0,13507,55.9,E44,S,Silvey, Mr, Bumkyyp Coiww,1309.38422,a60c1ad4-d2a6-422d-bccd-31b862b91777
+578,1,1,female,39,1,0,13507,55.9,E44,S,Silvey, Mrs, Bumkyyp Coiww (Ydygu Tybfag),1309.38422,8c8c2314-20ae-43d2-95ff-cbb0403d857f
+196,1,1,female,58,0,0,PC 17569,146.5208,B80,C,Lurette, Miss, Aleky,3430.436541,4cb7eec9-daea-427e-831e-0099804e919e
+119,0,1,male,24,0,1,PC 17558,247.5208,B58 B60,C,Baxter, Mr, Buekt Ypcosw,5794.422341,ed6f39b9-7b12-4474-ab8f-6e44c534e5b2
+300,1,1,female,50,0,1,PC 17558,247.5208,B58 B60,C,Baxter, Mrs, Bumyt (Rycosy WyDyigocieli Kqufuq),5794.422341,8439ecc6-d7ad-43b8-b97b-87cdad7f40da
+311,1,1,female,24,0,0,11767,83.1583,C54,C,Hays, Miss, Bumkyryc Ziwwrdyig,1947.386538,30007733-918b-4c3c-a06d-856027b1c0a1
+836,1,1,female,39,1,1,PC 17756,83.1583,E49,C,Compton, Miss, Bumy Typozsy,1947.386538,b5c810e5-836a-4f67-99ef-a94b8e4cb2c8
+880,1,1,female,56,0,1,11767,83.1583,C50,C,Potter, Mrs, Blekyr Pc (Ziwy Ydygutyi Fagkib),1947.386538,d219e670-bba1-47f3-866e-f3ba16cf203f
+2,1,1,female,38,1,0,PC 17599,71.2833,C85,C,Cumings, Mrs, Bumk Trycziy (Wrutigty Bfagkq Bfuayh),1669.442663,320f1a8c-b687-4ebe-aca8-5c28fd7fb9c7
+626,0,1,male,61,0,0,36963,32.3208,D50,S,Sutton, Mr, Blekyrycz,757.4941806,dd95a5a5-6252-4b7d-8aaf-2a24cc21201d
+156,0,1,male,51,0,1,PC 17597,61.3792,none,C,Williams, Mr, Blektyp Coiwy,1437.629279,8985a1b0-6b45-4356-8ae5-e6bbf206ee8d
+371,1,1,male,25,1,0,11765,55.4417,E50,C,Harder, Mr, Buekty Ycziwwyd,1298.657342,71959345-7baa-41a0-aaa2-b06411b9041d
+494,0,1,male,71,0,0,PC 17609,49.5042,none,C,Artagaveytia, Mr, Bumyt,1159.685404,158f16db-52db-4a7a-af69-bec692f3450e
+711,1,1,female,24,0,0,PC 17482,49.5042,C90,C,Mayne, Mlle," Bumkty Ycziwyru (""Tgg ty Belgyibf"")",1159.685404,18263b89-5958-420b-86fb-077154e9323b
+103,0,1,male,21,0,1,35281,77.2875,D26,S,White, Mr, Bumkyrp Cziwyr,1809.975768,c89e2e3b-b05d-405b-9dc4-20f554eab56f
+125,0,1,male,54,0,1,35281,77.2875,D26,S,White, Mr, Bumkyryc Ziywydt,1809.975768,331cac6f-6ebe-4e3f-8b45-f1978e46488e
+663,0,1,male,47,0,0,5727,25.5875,E58,S,Colley, Mr, Almytr Poziwyy,599.8959075,d786c7db-7275-4626-b8b3-87e8a3d73cdf
+93,0,1,male,46,1,0,W.E.P. 5734,61.175,E31,S,Chaffee, Mr, Bumkyrp Coswyr,1432.849815,b2936f2d-63dc-4238-9e5c-2b946e275472
+152,1,1,female,22,1,0,113776,66.6,C2,S,Pears, Mrs, Blekyr (Ycosw Wyutgu),1559.82628,f69035c3-0bf8-4c79-8b61-ca9fb7eff8be
+337,0,1,male,29,1,0,113776,66.6,C2,S,Pears, Mr, Blekyr Pcoswyr,1559.82628,3df924a8-04d7-4560-81eb-cc25c2db1b90
+178,0,1,female,50,0,0,PC 17595,28.7125,C49,C,Isham, Miss, Alm Ytypoziww,673.0390325,4a99ac5e-39f9-4a45-9412-423a3f1237fb
+291,1,1,female,26,0,0,19877,78.85,none,S,Barber, Miss," Almyt ""Rycziy""",1846.54733,b5de8446-9e79-4567-b214-b8ecfba86190
+742,0,1,male,36,1,0,19877,78.85,C46,S,Cavendish, Mr, Bumytr Pozsyyr,1846.54733,3f78c205-a75a-4c9b-a186-77bcaee75c59
+63,0,1,male,45,1,0,36973,83.475,C83,S,Harris, Mr, Bumky Ryczsywrd,1954.799155,69aeae6f-a229-4353-bb0d-d818f3da367a
+231,1,1,female,35,1,0,36973,83.475,C83,S,Harris, Mrs, Bumky Ryczsywrd (Yguty Belgyqb),1954.799155,ca1bf86c-6c8d-46b0-81c9-9a1ca451d9f2
+7,0,1,male,54,0,0,17463,51.8625,E46,S,McCarthy, Mr, Bumytry C,1214.883303,f62c5b0b-db82-4048-8445-77a06705ec41
+276,1,1,female,63,1,0,13502,77.9583,D7,S,Andrews, Miss, Bumkyryo Zsyyrutiu,1825.676378,235d7bbf-9a6a-49f1-bbe8-763f5b76ac28
+628,1,1,female,21,0,0,13502,77.9583,D9,S,Longley, Miss, Blektryc Ziwwy,1825.676378,a927699b-eb51-4530-af80-1723aa347198
+766,1,1,female,51,1,0,13502,77.9583,D11,S,Hogeboom, Mrs, Bumk T (Ypco Iwwrutg),1825.676378,539a23ef-ff53-428b-b134-46a5e7107583
+797,1,1,female,49,0,0,17465,25.9292,D17,S,Leader, Dr, Aleky (Ryczsyw),607.8936694,f8111940-d3bc-4663-92b1-8e9b7a4948ec
+863,1,1,female,48,0,0,17466,25.9292,D17,S,Swift, Mrs, Blekyrycz Syyr (Dyggocif Likquf Dafhyw),607.8936694,b8dd3769-430c-49f8-95fc-a766aa1000a5
+97,0,1,male,71,0,0,PC 17754,34.6542,A5,C,Goldschmidt, Mr, Buekty P,812.1092744,bfad05c1-84b1-496e-a95b-fc7a8f207a63
+175,0,1,male,56,0,0,17764,30.6958,A7,C,Smith, Mr, Bumyt Rpozsw,719.4597556,35cbb14a-534b-4064-938a-6584af99f7a4
+219,1,1,female,32,0,0,11813,76.2917,D15,C,Bazzani, Miss, Almyty,1786.668272,c561a0df-d439-4813-88fb-c4c4c8b4b319
+53,1,1,female,49,1,0,PC 17572,76.7292,D33,C,Harper, Mrs, Bumky Rpoosyw (Ruti Gocbel),1796.908309,2cba00c2-9482-49f2-8f6e-1a2fb201ad8a
+646,1,1,male,48,1,0,PC 17572,76.7292,D33,C,Harper, Mr, Bumky Rpoosyw,1796.908309,4a85ee09-4ca3-4718-b0aa-e514dc23058e
+682,1,1,male,27,0,0,PC 17572,76.7292,D49,C,Hassab, Mr, Bumkyr,1796.908309,7461e397-6101-4b3b-b463-87da5825b5bd
+454,1,1,male,49,1,0,17453,89.1042,C92,C,Goldenberg, Mr, Bumyyr P,2086.555084,fdfcaff1-4b86-4e90-a82a-46ba30cee9e3
+308,1,1,female,17,1,0,PC 17758,108.9,C65,C,Penasco y Castellana, Mrs, Bumkyr po Ziwyru (Tigoy Beliki Bodaf hy Wydi o Rutbeti),2549.89162,905f7da8-65aa-47b2-bb56-f1bf36d906d1
+506,0,1,male,18,1,0,PC 17758,108.9,C65,C,Penasco y Castellana, Mr, Bumkyr po Ziwyru,2549.89162,2b9d6c18-2882-4126-8393-162235384012
+513,1,1,male,36,0,0,PC 17473,26.2875,E25,S,McGough, Mr, Bumyt Rycosw,616.2799675,3208c2e1-99b8-44a0-85f9-f1b189f4e10b
+702,1,1,male,35,0,0,PC 17475,26.2875,E24,S,Silverthorne, Mr, Blektyp Coswyr,616.2799675,f3b4bdf0-3a94-4361-89bd-ec385b4920a9
+708,1,1,male,42,0,0,PC 17476,26.2875,E24,S,Calderhead, Mr, Almytr Pozsywrdyg,616.2799675,6aa0059e-0f32-446c-85b4-24c1072e5d65
+216,1,1,female,31,1,0,35273,113.275,D36,C,Newell, Miss, Bumytyyco,2652.291995,f471eb6f-7ead-4653-8922-c3838a87a899
+394,1,1,female,23,1,0,35273,113.275,D36,C,Newell, Miss, Bumkyryo,2652.291995,f0d629ce-6a13-4edf-a37b-421c893430d1
+660,0,1,male,58,0,2,35273,113.275,D48,C,Newell, Mr, Almkyr Pozswyr,2652.291995,edc664f4-1aa6-42dd-8122-6211b7b5963f
+263,0,1,male,52,1,1,110413,79.65,E67,S,Taussig, Mr, Alek,1865.27197,31580043-3552-4e62-8bb1-8b18716e3ee2
+559,1,1,female,39,1,1,110413,79.65,E67,S,Taussig, Mrs, Alek (Typcoi Wyrdyggoyb),1865.27197,9ac33ce7-aa33-4fc0-973b-88a860f84f4f
+586,1,1,female,18,0,2,110413,79.65,E68,S,Taussig, Miss, Bumk,1865.27197,b4d99b2d-d723-4bf2-8322-6a96693138de
+298,0,1,female,2,1,2,113781,151.55,C22 C26,S,Allison, Miss, Bumyt Rycoiwy,3548.14899,d001dc29-e1b3-4f0c-bc8d-55e591c9357e
+499,0,1,female,25,1,2,113781,151.55,C22 C26,S,Allison, Mrs, Bumkyr P C (Ziwwyu Tigty Beliyqb),3548.14899,185d28a7-0afa-4410-b7ec-ddbf0d49a3ed
+709,1,1,female,22,0,0,113781,151.55,none,S,Cleaver, Miss, Aleky,3548.14899,59b1a419-746e-45cd-aa5a-305fb64d4597
+551,1,1,male,17,0,2,17421,110.8833,C70,C,Thayer, Mr, Bumk Typcosw Wr,2596.312343,9c1cac9c-7d98-4d57-8bc9-0b798da8ff9f
+582,1,1,female,39,1,1,17421,110.8833,C68,C,Thayer, Mrs, Bumk Typcosw (Wydyig Tybflgkibf Dafhyw),2596.312343,237c99d0-6b26-4bae-a3bc-9885befc2910
+699,0,1,male,49,1,1,17421,110.8833,C68,C,Thayer, Mr, Bumk Typcosw,2596.312343,a96034aa-9fcc-49e2-8650-d324c3699e9e
+868,0,1,male,31,0,0,PC 17590,50.4958,A24,S,Roebling, Mr, Bumkyrpcos Yyrutgut YI,1182.894596,adb00d0b-b1cd-4070-a562-a353cc8d036e
+249,1,1,male,37,1,1,11751,52.5542,D35,S,Beckwith, Mr, Bumkyrp Coiwyrd,1231.073094,e6836c02-b180-4ad9-bb20-e473b1c79d4f
+622,1,1,male,42,1,0,11753,52.5542,D19,S,Kimball, Mr, Almyt Rycziw Wr,1231.073094,4a39bd45-e473-4cf1-b429-75c783a844b6
+872,1,1,female,47,1,1,11751,52.5542,D35,S,Beckwith, Mrs, Bumkyrp Coiwyrd (Tigtyi Fagyqufu),1231.073094,fa7ed0e3-f6c2-4ffd-a2b7-4168fe3ec4db
+310,1,1,female,30,0,0,PC 17485,56.9292,E36,C,Francatelli, Miss, Bueky Rycos,1333.473469,45c65f6d-5cfa-442b-b0b1-258333064f14
+600,1,1,male,49,1,0,PC 17485,56.9292,A20,C,Duff Gordon, Sir," Bumky Ypcosw (""Wr Dyggoc"")",1333.473469,e0ab590e-3b9a-4b35-aaec-7f44ce3324e9
+259,1,1,female,35,0,0,PC 17755,512.3292,none,C,Ward, Miss, Almy,11992.47479,16f1ca5a-529d-490a-912c-25c4ec5b520a
+680,1,1,male,36,0,1,PC 17755,512.3292,B51 B53 B55,C,Cardeza, Mr, Blekyr Pcosy Wydtigoc,11992.47479,43258562-8ec5-4344-bb2b-1cddaa568ae8
+738,1,1,male,35,0,0,PC 17755,512.3292,B101,C,Lesurer, Mr, Bumkyry C,11992.47479,959593ac-664a-485c-a947-2637646e0f3c
+269,1,1,female,58,0,1,PC 17582,153.4625,C125,S,Graham, Mrs, Bumkyyp Cziwwrut (Igocb Fagkibf),3592.912583,80bc8c0b-3c5c-4b1d-aa4e-ed428b4dd838
+333,0,1,male,38,0,1,PC 17582,153.4625,C91,S,Graham, Mr, Buekty Ycziww,3592.912583,c2a7560a-35e6-427e-b131-79e99eb2eac5
+610,1,1,female,40,0,0,PC 17582,153.4625,C125,S,Shutes, Miss, Alekyrycz S,3592.912583,97c0fa34-5f73-44e6-9b13-3c9dfd4e4ed6
+690,1,1,female,15,0,1,24160,211.3375,B5,S,Madill, Miss, Buektypco Iwyrutggo,4947.523258,34df21b0-98e5-4b9f-a417-f52cde59329e
+731,1,1,female,29,0,0,24160,211.3375,B5,S,Allen, Miss, Alekyrycz Sywrut,4947.523258,1d292bcf-2f82-48f9-a85c-164441a6854d
+780,1,1,female,43,0,1,24160,211.3375,B3,S,Robert, Mrs, Almytr Pcosw (Yrutigocb Fagkib FdQyhhyk),4947.523258,b9e22bb2-8047-49cf-b8d6-989b3914b29b
+381,1,1,female,42,0,0,PC 17757,227.525,none,C,Bidois, Miss, Bumytyy,5326.404645,ce7fc95d-2479-41a9-9f31-217da81f8c5f
+701,1,1,female,18,1,0,PC 17757,227.525,C62 C64,C,Astor, Mrs, Bumk Typoz (Sywydyigo Ciflikqu Fuqfy),5326.404645,133f5691-2c72-4d0c-bce0-33f141e0f404
+717,1,1,female,38,0,0,PC 17757,227.525,C45,C,Endres, Miss, Bumytypo Ziyyru,5326.404645,1d919dca-97ef-47ee-9a78-aac6d2a8d942
+12,1,1,female,58,0,0,113783,26.55,C103,S,Bonnell, Miss, Alekyrycz,622.42399,89ec9003-b8f9-4c1a-8b21-3c0c9af93cda
+188,1,1,male,45,0,0,111428,26.55,none,S,Romaine, Mr," Blektyp Coswyru (""Tg G Tybfagy"")",622.42399,7cea1c65-5c45-408c-84ae-f5858a0edf40
+253,0,1,male,62,0,0,113514,26.55,C87,S,Stead, Mr, Bumkyyp Cziwyr,622.42399,e3da794f-314c-49bd-b5e7-8aeb342b19c1
+431,1,1,male,28,0,0,110564,26.55,C52,S,Bjornstrom-Steffansson, Mr, Buekyrp Cosyw,622.42399,5a2d79b5-ddf1-45c7-84b0-a0871be1c5bb
+448,1,1,male,34,0,0,113794,26.55,none,S,Seward, Mr, Blekyryc Ziwwyd,622.42399,8f57efde-fa5c-4261-98ab-86e44fcc78ca
+457,0,1,male,65,0,0,13509,26.55,E38,S,Millet, Mr, Blektyp Cosyw,622.42399,8764bd56-a8a0-4eea-9255-8e695b008fac
+461,1,1,male,48,0,0,19952,26.55,E12,S,Anderson, Mr, Bumky,622.42399,5b67d045-f042-4816-84e7-42cfe0187667
+468,0,1,male,56,0,0,113792,26.55,none,S,Smart, Mr, Bumk Typcziwyru,622.42399,edda877a-116e-40dc-ae5c-f05aef2ff8c9
+537,0,1,male,45,0,0,113050,26.55,B38,S,Butt, Major, Almkyrycz Sywrutggoc,622.42399,b0dcb90d-59a5-409a-a7bf-10353265b42a
+556,0,1,male,62,0,0,113807,26.55,none,S,Wright, Mr, Buekty,622.42399,908aa940-587a-426a-b3b0-98297ed9d29d
+605,1,1,male,35,0,0,111426,26.55,none,C,Homer, Mr," Bumky (""Rp O Ziwyr"")",622.42399,ade928a8-e97b-4564-810e-81e3c1b474b6
+695,0,1,male,60,0,0,113800,26.55,none,S,Weir, Col, Bumk,622.42399,7d416588-49b7-4cc6-b5ae-aabc3d8038a9
+858,1,1,male,51,0,0,113055,26.55,E17,S,Daly, Mr, Bumyt Rycos ,622.42399,b783ce48-506b-4627-b759-884c1fe6cbea
+84,0,1,male,28,0,0,113059,47.1,none,S,Carrau, Mr, Blektypco S,1103.41318,0b5b6767-ca06-4f08-9f08-289035371e20
+4,1,1,female,35,1,0,113803,53.1,C123,S,Futrelle, Mrs, Bumkyyp Coiww (Ruti Goy Beag),1243.84798,611f501f-9902-413e-8b8e-a52c35cfe2eb
+138,0,1,male,37,1,0,113803,53.1,C123,S,Futrelle, Mr, Bumkyyp Coiww,1243.84798,dc5b13f9-11a4-4cf2-a908-48d080fd2676
+725,1,1,male,27,1,0,113806,53.1,E8,S,Chambers, Mr, Bumkyr Pozswyrd,1243.84798,4b682313-42a3-47a0-9c0c-2741be53fd23
+749,0,1,male,19,1,0,113773,53.1,D30,S,Marvin, Mr, Bumyyr Pozsyw,1243.84798,e73b8cdf-b1c3-4983-b926-157100d9093c
+810,1,1,female,33,1,0,113806,53.1,E8,S,Chambers, Mrs, Bumkyr Pozswyrd (Tigtci Flikqb),1243.84798,650dbe0a-78cc-4ad9-993d-f18e5b0c4300
+661,1,1,male,50,2,0,PC 17611,133.65,none,S,Frauenthal, Dr, Bumky Rycziyw,3129.18517,a26bf8f5-6ead-4222-86a7-9f9c14f24cfc
+557,1,1,female,48,1,0,11755,39.6,A16,C,Duff Gordon, Lady," (Bumytry Czsywruygu Tybfagkibf) (""Dqf Hywkid"")",927.86968,94e511e1-2e60-47af-b640-959ac776ea1c
+140,0,1,male,24,0,0,PC 17593,79.2,B86,C,Giglio, Mr, Bumkyr,1854.73936,afdf8a78-8519-49c2-bd05-8806b44ee42c
+588,1,1,male,60,1,1,13567,79.2,B41,C,Frolicher-Stehli, Mr, Bumkyrpoos,1854.73936,b07dc672-4f1b-4718-aaad-18fd1ad1f106
+790,0,1,male,46,0,0,PC 17593,79.2,B82 B84,C,Guggenheim, Mr, Bumkyryc,1854.73936,3049a716-fa87-450a-9b05-078527c2ab0f
+270,1,1,female,35,0,0,PC 17760,135.6333,C99,S,Bissette, Miss, Alekyy,3175.605893,407c11d0-bf68-4717-8a5d-8faab131acf8
+326,1,1,female,36,0,0,PC 17760,135.6333,C32,C,Young, Miss, Bumyy Rpozi,3175.605893,e3b0f800-99cb-4a28-902b-630df4e2e2d9
+374,0,1,male,22,0,0,PC 17760,135.6333,none,C,Ringhini, Mr, Bumky,3175.605893,ddf0cefd-5a17-4e33-b297-3a34187da124
+516,0,1,male,47,0,0,36967,34.0208,D46,S,Walker, Mr, Bumkyyp Ozsywrut,797.2840406,28f6cfd5-3a4c-48de-bf26-f964844a3ef5
+137,1,1,female,19,0,2,11752,26.2833,D47,S,Newsom, Miss, Bumyt Rycosywy,616.1816631,9af01f71-1f76-4a0b-885d-5d2ee9f907ad
+31,0,1,male,40,0,0,PC 17601,27.7208,none,C,Uruchurtu, Don, Bumyyr Y,649.8275006,1c12a0e1-f341-46a4-9381-e2ed13912c97
+195,1,1,female,44,0,0,PC 17610,27.7208,B4,C,Brown, Mrs, Bumyt Rycosw (Wydtigoc Belik),649.8275006,3cac1a9b-3a6c-45ac-9fab-06b1284f682f
+497,1,1,female,54,1,0,36947,78.2667,D20,C,Eustis, Miss, Alekyrycz Sywruy,1832.894727,6c601111-7f15-4cdd-b812-4c50e9f8b34a
+592,1,1,female,52,1,0,36947,78.2667,D20,C,Stephenson, Mrs, Bumkyr Pozswyr (Dyggty Ielgyq),1832.894727,b6185ba1-a138-49dc-80d7-87c06585281c
+292,1,1,female,19,1,0,11967,91.0792,B49,C,Bishop, Mrs, Bumkyrpoz S (Wyrut Gutcif),2132.781539,d90c663e-015a-4270-9f0b-63a4390cb702
+485,1,1,male,25,1,0,11967,91.0792,B49,C,Bishop, Mr, Bumkyrpoz S,2132.781539,be6c61c3-37e3-4553-9ccd-04acde86a207
+34,0,2,male,66,0,0,C.A. 24579,10.5,none,S,Wheadon, Mr, Almytr P,246.7609,90fddf1f-1515-466f-b2e3-0f3e979db97a
+57,1,2,female,21,0,0,C.A. 31026,10.5,none,S,Rugg, Miss, Aleky,246.7609,45bd4ba3-05a4-4c31-8bbe-af12b62a478e
+67,1,2,female,29,0,0,C.A. 29395,10.5,F33,S,Nye, Mrs, (Alekyrycz Sywydt),246.7609,7dda1320-23ed-418e-80a6-579476fb1a19
+71,0,2,male,32,0,0,C.A. 33111,10.5,none,S,Jenkin, Mr, Blektyp Coswyr,246.7609,115cae0f-e5f9-4e07-8e40-bce88f831b68
+85,1,2,female,17,0,0,SO/C 14885,10.5,none,S,Ilett, Miss, Bumkty,246.7609,220a2a93-2421-41db-9f9d-1189d44b2ca1
+220,0,2,male,30,0,0,W/C 14208,10.5,none,S,Harris, Mr, Bumkyr,246.7609,e9154758-82fc-4800-90d6-4be9322e4c5c
+227,1,2,male,19,0,0,SW/PP 751,10.5,none,S,Mellors, Mr, Bumkyyp Cosw,246.7609,238bf8cb-3aa7-4312-b4ef-e6d1545574ae
+235,0,2,male,24,0,0,C.A. 29566,10.5,none,S,Leyson, Mr, Bumytr Pozsyyr Dyggoc,246.7609,881a119d-3925-49c6-8cc1-37dd0b93ab2b
+239,0,2,male,19,0,0,28665,10.5,none,S,Pengelly, Mr, Blekyrycz Sywruyg,246.7609,18e5f34d-7604-4b4c-afb5-97a9442d80eb
+243,0,2,male,29,0,0,W./C. 14263,10.5,none,S,Coleridge, Mr, Bumytypc Zsywrut,246.7609,2967638a-0600-41bb-adca-f835083a1a79
+266,0,2,male,36,0,0,C.A. 17248,10.5,none,S,Reeves, Mr, Bumyt,246.7609,7c063be7-4217-4c40-b30c-aaa251593de6
+399,0,2,male,23,0,0,244278,10.5,none,S,Pain, Dr, Almkyr,246.7609,8a456767-b24a-4108-bd59-d00ab655084c
+440,0,2,male,31,0,0,C.A. 18723,10.5,none,S,Kvillner, Mr, Bumyt Rycziw Wydyggocbel,246.7609,c69398e8-c40f-4bbf-a56f-c953bf54df0d
+459,1,2,female,50,0,0,F.C.C. 13531,10.5,none,S,Toomey, Miss, Almyt,246.7609,fc48a590-535f-47ba-a2e5-b358d6299105
+517,1,2,female,34,0,0,C.A. 34260,10.5,F33,S,Lemore, Mrs, (Alekyy Pozsyy),246.7609,24e1c9d8-3c3d-47c2-a579-c4ca3eb503f2
+527,1,2,female,50,0,0,W./C. 14258,10.5,none,S,Ridsdale, Miss, Bumy,246.7609,1b4e3ef9-d090-426d-a13b-334f9b68e19a
+571,1,2,male,62,0,0,S.W./PP 752,10.5,none,S,Harris, Mr, Buekty,246.7609,c0a1b1dd-d52a-478f-9608-983742b27c38
+620,0,2,male,26,0,0,31028,10.5,none,S,Gavey, Mr, Bumkyrpo,246.7609,476aaaf2-1438-43a1-b167-7db697db6299
+673,0,2,male,70,0,0,C.A. 24580,10.5,none,S,Mitchell, Mr, Bumky Rycziyw,246.7609,fabfc1c3-403f-4d10-ac0b-1d6f16742dc0
+718,1,2,female,27,0,0,34218,10.5,E101,S,Troutt, Miss," Almyty Poziy ""Wydtiu""",246.7609,bc6e56db-00b3-4388-83a2-48b8ff32c5b6
+773,0,2,female,57,0,0,S.O./P.P. 3,10.5,E77,S,Mack, Mrs, (Bumy),246.7609,9cd7ff51-59c6-4968-ac71-dbb06e6ec3a7
+813,0,2,male,35,0,0,28206,10.5,none,S,Slemen, Mr, Bumkyrp Cosyw,246.7609,fbdf141d-f4ed-4047-94c4-4992849b8139
+842,0,2,male,16,0,0,S.O./P.P. 3,10.5,none,S,Mudd, Mr, Blekyr Pcoswyr,246.7609,2a42b5d6-828e-4f6f-949a-dd8465e68308
+884,0,2,male,28,0,0,C.A./SOTON 34068,10.5,none,S,Banfield, Mr, Blekyrycz Sywyd,246.7609,2231bdf7-97d1-48ab-873a-8608dac4f92e
+145,0,2,male,18,0,0,231945,11.5,none,S,Andrew, Mr, Almytry Cosyyr,270.1667,57095241-a515-46db-ba89-3e3ebd5dbc0c
+530,0,2,male,23,2,1,29104,11.5,none,S,Hocking, Mr, Bumkyrp Coiwwy,270.1667,6a9ad5f9-5cf6-4101-9395-ca0a27ec4549
+758,0,2,male,18,0,0,29108,11.5,none,S,Bailey, Mr, Bumky Ypcziw,270.1667,16d7c049-3174-47a1-a395-bb9e3056831e
+862,0,2,male,21,1,0,28134,11.5,none,S,Giles, Mr, Blekyrycz Iwwydt,270.1667,d655f60b-2c58-4f36-ac23-9af4f92d39f5
+390,1,2,female,17,0,0,SC 1748,12,none,C,Lehmann, Miss, Bumkty,281.8696,c601751d-da45-48a6-914e-417994d17589
+22,1,2,male,34,0,0,248698,13,D56,S,Beesley, Mr, Bumkyrpo,305.2754,a30a05bb-3d45-40e0-b55d-f910d4dfbb5f
+135,0,2,male,25,0,0,C.A. 29178,13,none,S,Sobey, Mr, Bumyyr Poziw Wyutig,305.2754,3ba095f0-3035-43e6-9189-39f9bec84427
+150,0,2,male,42,0,0,244310,13,none,S,Byles, Rev, Blekyr Pooswyr Dygutc,305.2754,971702c2-1e8f-4327-8aac-42d81dea4130
+179,0,2,male,30,0,0,250653,13,none,S,Hale, Mr, Bumytypc,305.2754,e18779ec-fb13-4e4b-9326-91498f6a947e
+191,1,2,female,32,0,0,234604,13,none,S,Pinsky, Mrs, (Bumy),305.2754,6e0aeca8-ab8f-417a-b50b-f1d00c8f9d02
+192,0,2,male,19,0,0,28424,13,none,S,Carbines, Mr, Bumkyyp,305.2754,9de5f271-bd3c-424f-ac8d-cd6006f9ba01
+200,0,2,female,24,0,0,248747,13,none,S,Yrois, Miss," Bumkyypco (""Sww Rutgutc"")",305.2754,41090b59-114a-4901-8c85-db0c4ce94fe1
+214,0,2,male,30,0,0,250646,13,none,S,Givard, Mr, Bumk Trycziwwyd,305.2754,3ebcaa4b-b7b9-4edb-a915-162cb2f64443
+222,0,2,male,27,0,0,220367,13,none,S,Bracken, Mr, Bumyt R,305.2754,6fd825e1-b0c2-4273-806b-b7c6dbb78acf
+229,0,2,male,18,0,0,236171,13,none,S,Fahlstrom, Mr, Almy Typoz,305.2754,41a1d66d-a7dd-48ef-a214-1f172eaa328d
+289,1,2,male,42,0,0,237798,13,none,S,Hosono, Mr, Bumytypo,305.2754,dc539423-4352-4469-83eb-d0b26f580eb9
+328,1,2,female,36,0,0,28551,13,D,S,Ball, Mrs, (Ale Y Typc),305.2754,b310c2f9-6ea1-4ec6-846d-0ce2da4a6d25
+343,0,2,male,28,0,0,248740,13,none,S,Collander, Mr, Alek Typcos,305.2754,37df9a87-3171-43c8-96c1-01556e39a28a
+344,0,2,male,25,0,0,244361,13,none,S,Sedgwick, Mr, Blektyp Cziwyrutg Gocbelgkib,305.2754,4e7d9740-d1d9-4dbf-a210-e498ddb0b47d
+345,0,2,male,36,0,0,229236,13,none,S,Fox, Mr, Blektyy Cosywr,305.2754,2fbd88cf-9aaa-40ed-95de-c452e1898e8e
+346,1,2,female,24,0,0,248733,13,F33,S,Brown, Miss," Alekyy ""Pozswyr""",305.2754,a6bb6c8c-ed37-40a9-9c3a-96cb0bd49145
+347,1,2,female,40,0,0,31418,13,none,S,Smith, Miss, Bumyyr Ycziy,305.2754,5f256194-9741-485a-a4d5-78966c739f89
+358,0,2,female,38,0,0,237671,13,none,S,Funk, Miss, Almyy Rpozsyw,305.2754,b12e63d6-d611-4080-967a-d324e89aa9d1
+388,1,2,female,36,0,0,27849,13,none,S,Buss, Miss, Bumy,305.2754,e0fbc8fc-8864-4330-b1cd-a3f9b508b910
+418,1,2,female,18,0,2,250652,13,none,S,Silven, Miss, Bueky Rycosyyru,305.2754,99d2ab05-c126-40d6-a383-5b8e8462511d
+419,0,2,male,30,0,0,28228,13,none,S,Matthews, Mr, Bumkyyp Cosw,305.2754,0841fc55-fe76-424b-9274-0a3459991a5a
+444,1,2,female,28,0,0,230434,13,none,S,Reynaldo, Ms, Almytrycoiw,305.2754,5149c5eb-073a-4661-992f-93b20bb3063e
+464,0,2,male,48,0,0,234360,13,none,S,Milling, Mr, Bumyt Rpcoswyyd,305.2754,be6ce255-76a3-43c7-b732-d313f597274f
+577,1,2,female,34,0,0,243880,13,none,S,Garside, Miss, Almyt,305.2754,16619da3-ae30-4c30-95d6-5a72cb81a6dc
+636,1,2,female,28,0,0,237668,13,none,S,Davis, Miss, Bumy,305.2754,67a815b6-d646-4b8a-a928-95c31fc80c52
+659,0,2,male,23,0,0,29751,13,none,S,Eitemiller, Mr, Buekty Pcoiw,305.2754,fb6d0984-0d07-4b17-acba-95de37c2bf66
+667,0,2,male,25,0,0,234686,13,none,S,Butler, Mr, Bumytypc Ziwwyd,305.2754,c0372a93-5eea-45c1-8e19-440f2d02c5a4
+674,1,2,male,31,0,0,244270,13,none,S,Wilhelms, Mr, Blektyp,305.2754,429ed44b-20fc-42bf-b42c-81f9ac13a674
+715,0,2,male,52,0,0,250647,13,none,S,Greenberg, Mr, Bumyyr,305.2754,58d500fa-5a94-48fd-a6bd-1df7e48e3718
+723,0,2,male,34,0,0,12233,13,none,S,Gillespie, Mr, Bumkyyp Coswy,305.2754,da8237bd-30a6-4de7-9726-82e76edfb40d
+724,0,2,male,50,0,0,250643,13,none,S,Hodges, Mr, Bumky Rpozi,305.2754,b748ce25-8821-45b9-aa16-af3551b8dfb3
+734,0,2,male,23,0,0,28425,13,none,S,Berriman, Mr, Bumkyyp Cosw,305.2754,ef9093ab-c68c-4f26-8d24-e67d18d2a2a3
+735,0,2,male,23,0,0,233639,13,none,S,Troupiansky, Mr, Bumyt Yycos,305.2754,60319103-28d0-4346-9e82-54c20d802b51
+748,1,2,female,30,0,0,250648,13,none,S,Sinkkonen, Miss, Almy,305.2754,72f396c5-1412-4b2e-88e6-17a608cdf6d8
+796,0,2,male,39,0,0,28213,13,none,S,Otter, Mr, Bumkyrp,305.2754,6ca80b4e-c35a-40b6-89a2-093580d1ec1e
+801,0,2,male,34,0,0,250647,13,none,S,Ponesell, Mr, Bumkyr,305.2754,32f1b885-05f5-44ac-b693-08578f16f8a1
+809,0,2,male,39,0,0,248723,13,none,S,Meyer, Mr, Aumytr,305.2754,039e62c8-ed69-4954-abc4-56ea376442bf
+865,0,2,male,24,0,0,233866,13,none,S,Gill, Mr, Bumk Typcoiw,305.2754,bd84b7cc-2f6f-4a26-8ff1-fdce814db2bd
+866,1,2,female,42,0,0,236852,13,none,S,Bystrom, Mrs, (Bumytypo),305.2754,c63a40f2-266f-4a29-91bf-719327468122
+887,0,2,male,27,0,0,211536,13,none,S,Montvila, Rev, Buekyr,305.2754,8dd6cf3c-066a-4ef9-9c8d-3de72d7d082d
+233,0,2,male,59,0,0,237442,13.5,none,S,Sjostedt, Mr, Almkt Ypozs,316.9783,efdc5482-4f3c-438f-95ed-c50268c31a2d
+563,0,2,male,28,0,0,218629,13.5,none,S,Norman, Mr, Bumytr Pooswyr,316.9783,a27fd6e6-4e9f-42db-8215-5c356d5ebc5b
+696,0,2,male,52,0,0,248731,13.5,none,S,Chapman, Mr, Blektyp Coswy,316.9783,a9512c44-d1ef-4806-a617-34ba6204d5b9
+707,1,2,female,45,0,0,223596,13.5,none,S,Kelly, Mrs," Blekyrpo ""Ziwwyu""",316.9783,ea89e8d6-78a4-48c3-8840-9e6cb3c98a98
+318,0,2,male,54,0,0,29011,14,none,S,Moraweck, Dr, Almytr,328.6812,0976c5ea-0842-43fa-8a4f-f64a6cd45f6e
+248,1,2,female,24,0,2,250649,14.5,none,S,Hamalainen, Mrs, Bumkyyp (Ozsy),340.3841,b90dfa4c-cc75-42f1-b81e-e7e4c4e89a78
+587,0,2,male,47,0,0,237565,15,none,S,Jarvis, Mr, Bumk Typcos,352.087,840f51e5-7864-4e11-9ba4-0f9234b7ecdc
+16,1,2,female,55,0,0,248706,16,none,S,Hewlett, Mrs, (Bumy T Ryczsywy) ,375.4928,5d8d22d0-29a7-4c98-ac45-500747a7f357
+42,0,2,female,27,1,0,11668,21,none,S,Turpin, Mrs, Bumkyyp Cosw Wydygg (Tybelgy Ibf Dafhywydd),492.5218,f5c92bc1-24d9-4d57-b755-60fce157bc73
+118,0,2,male,29,1,0,11668,21,none,S,Turpin, Mr, Bumkyyp Cosw Wydygg,492.5218,fec2012d-54f6-443d-b99b-32c007693752
+212,1,2,female,35,0,0,F.C.C. 13528,21,none,S,Cameron, Miss, Bleyt Ypcoi,492.5218,c4f73b74-7c12-402b-9a28-1bdf18c3d2b0
+406,0,2,male,34,1,0,28664,21,none,S,Gale, Mr, Blektypc,492.5218,e9fffdb2-37f2-4113-bc19-1bbb0e939ff4
+477,0,2,male,34,1,0,31027,21,none,S,Renouf, Mr, Bumyt Ryczi,492.5218,f1c9f14d-851e-49f3-8ca0-c6dd3e159016
+727,1,2,female,30,3,0,31027,21,none,S,Renouf, Mrs, Bumyt Ryczi (Wyrdyig Tybfagyq),492.5218,ecb36929-4eb7-473c-b408-8c0083217e35
+99,1,2,female,34,0,1,231919,23,none,S,Doling, Mrs, Bumk T (Ypo Ziwyy Dygu),539.3334,2626d54c-d079-410c-a821-f23c70dbe289
+652,1,2,female,18,0,1,231919,23,none,S,Doling, Miss, Almyy,539.3334,cf9d7951-180a-4be6-87bd-99753c3ee272
+751,1,2,female,4,1,1,29103,23,none,S,Wells, Miss, Buek,539.3334,cf99f9e5-39cc-4c5d-bd32-3bfd458c5ad1
+775,1,2,female,54,1,3,29105,23,none,S,Hocking, Mrs, Alekyrycz (Iwyru Tiutc),539.3334,4d3d862e-5ecf-4e72-8a74-b4d49c8ed5b0
+309,0,2,male,30,1,0,P/PP 3381,24,none,C,Abelson, Mr, Bumyyr,562.7392,b84af069-1e8a-4f97-90ba-cfe4b8519282
+875,1,2,female,28,1,0,P/PP 3381,24,none,C,Abelson, Mrs, Bumyyr (Pozsyw Rutigty),562.7392,47621fb0-c0c5-4da9-8faa-e7eacba5492c
+21,0,2,male,35,0,0,239865,26,none,S,Fynney, Mr, Bumytr P,609.5508,67b7db3c-876d-46e6-be64-dd60a5a36b8c
+54,1,2,female,29,1,0,2926,26,none,S,Faunthorpe, Mrs, Bumkyy (Ycosywydt Igty Belgyqbod),609.5508,185610c5-1d94-419d-9aba-f70e543e13a0
+100,0,2,male,34,1,0,244367,26,none,S,Kantor, Mr, Bumyy,609.5508,48e285ce-06ff-4076-ab57-18c8f213ff97
+134,1,2,female,29,1,0,228414,26,none,S,Weisz, Mrs, Buekyrp (Coswyrdy Ggocbeagy Qufu),609.5508,d0a61769-6eec-4eea-ae27-4df3bae8899f
+194,1,2,male,3,1,1,230080,26,F2,S,Navratil, Master, Bumkyr P,609.5508,f8233709-28cd-46f7-b485-fb8956802ecf
+237,0,2,male,44,1,0,26707,26,none,S,Hold, Mr, Blektyp,609.5508,7835ea13-dc30-410c-b666-fe14d48cc7a0
+250,0,2,male,54,1,0,244252,26,none,S,Carter, Rev, Almytr Pooswyruy,609.5508,2a3e652f-a1f5-4f45-9173-66ac0daf0b03
+260,1,2,female,50,0,1,230433,26,none,S,Parrish, Mrs, (Bumyy Rycos),609.5508,e39c9cfb-077b-48ff-a326-faf1324cb7ed
+313,0,2,female,26,1,1,250651,26,none,S,Lahtinen, Mrs, Bumkyyp (Ozsy Wydtgut),609.5508,c7789252-5ea0-4e1c-b76a-6ddb707cb2e6
+317,1,2,female,24,1,0,244367,26,none,S,Kantor, Mrs, Bumyy (Rycoiw Wrutgut),609.5508,3d75cc50-3a6c-4d70-addc-2de815218820
+341,1,2,male,2,1,1,230080,26,F2,S,Navratil, Master, Almytr Poziw,609.5508,860c1b38-1d48-49ac-a746-2cad0663b86c
+398,0,2,male,46,0,0,28403,26,none,S,McKane, Mr, Bumyt Rycos,609.5508,f0ebb0a3-ac40-45d8-8e44-b2a8731b7adf
+427,1,2,female,28,1,0,2003,26,none,S,Clarke, Mrs, Blektyp C (Osy Wydyi Gocbeagk),609.5508,827a3e2d-8a7b-4512-9274-d0806ab9da5d
+428,1,2,female,19,0,0,250655,26,none,S,Phillips, Miss," Bumy Trycoswy (""Rdt Guty Beaiki Bfuqfyhw Kidhrutb"")",609.5508,a9adec3a-4bb0-46df-9519-34fcf0a988cc
+433,1,2,female,42,1,0,SC/AH 3085,26,none,S,Louch, Mrs, Blektyp Oziwyrdyg (Utybe Agyquoda Fhyw),609.5508,ad95acea-8f34-495f-ab09-ea718dd4c260
+507,1,2,female,33,0,2,26360,26,none,S,Quick, Mrs, Blekyrycz Swyrdyg (Goci Fagkibfd),609.5508,c62fa562-657c-41fd-9ec2-4bc56d46a872
+519,1,2,female,36,1,0,226875,26,none,S,Angle, Mrs," Bumkyyp O (Zsywydti ""Goci"" Elgyq Bodqyh)",609.5508,9f589bd2-2e77-486c-8607-ca1472783ce5
+531,1,2,female,2,1,1,26360,26,none,S,Quick, Miss, Blektyp Coi,609.5508,54b3158a-6afe-4686-b908-fafbc0bdba83
+544,1,2,male,32,1,0,2908,26,none,S,Beane, Mr, Almytr,609.5508,49cf790d-8a97-44d0-9029-9d3106e6e251
+547,1,2,female,19,1,0,2908,26,none,S,Beane, Mrs, Almytr (Ycziw Wrutgu),609.5508,05914c1b-f334-4365-9c2b-461bc642dc01
+552,0,2,male,27,0,0,244358,26,none,S,Sharp, Mr, Bumkyryc Ziwyr D,609.5508,7691e28b-5c5f-4d67-8b53-98867795cb7a
+583,0,2,male,54,0,0,28403,26,none,S,Downton, Mr, Bumkyyp Cosyw,609.5508,e9016ed0-791a-42c9-bc3f-16e87b8a6a1c
+595,0,2,male,37,1,0,SC/AH 29037,26,none,S,Chapman, Mr, Bumk Typco,609.5508,56a12f39-6e9b-4c36-a84e-ed40000a6f2c
+706,0,2,male,39,0,0,250655,26,none,S,Morley, Mr," Bumky Rycoiw (""Wr Dyggo Ciflgyqb"")",609.5508,53e70d24-9664-4b63-a9e0-551802d6d99a
+729,0,2,male,25,1,0,236853,26,none,S,Bryhl, Mr, Bumk Yrpozs Wyrdtgut,609.5508,3e01cae5-203e-49f5-a165-e6fc79fcbff7
+792,0,2,male,16,0,0,239865,26,none,S,Gaskell, Mr, Almkyr,609.5508,111d908c-078e-49ca-9796-7d5cbdb05ca4
+855,0,2,female,44,1,0,244252,26,none,S,Carter, Mrs, Almytr Pooswyruy (Gutyif Likquf),609.5508,2300b827-01b0-41d1-904e-8a96d2b75fd8
+881,1,2,female,25,0,1,230433,26,none,S,Shelley, Mrs, Bumkyyp (Oziwyru Tigtybf Likq),609.5508,de241063-1f74-45c6-9cb3-8fe256f4d678
+218,0,2,male,42,1,0,243847,27,none,S,Jacobsohn, Mr, Bumkyy Poziyw,632.9566,f706d13f-f3bb-4185-b62b-6515a9b9f28e
+601,1,2,female,24,2,1,243847,27,none,S,Jacobsohn, Mrs, Bumkyy Poziyw (Ydy Ggocbel Gkqufda),632.9566,318cc67b-3887-4f78-bfb7-3173296067d5
+324,1,2,female,22,1,1,248738,29,none,S,Caldwell, Mrs, Almytr Pcoswyr (Dyggoy Bea Gyqbouqf),679.7682,b401cf2e-b4db-4cf9-b528-8dcf68812ca2
+581,1,2,female,25,1,1,237789,30,none,S,Christy, Miss, Bumyy Rycziw,703.174,25fd58c5-cae2-4e96-9c38-29b80f62a347
+238,1,2,female,8,0,2,C.A. 31921,26.25,none,S,Collyer, Miss," Bumkyryo ""Ziwwyu""",615.40225,6e1e3c9a-22b1-4f1a-aa72-7c12fce50d04
+315,0,2,male,43,1,1,F.C.C. 13529,26.25,none,S,Hart, Mr, Bumkyryc,615.40225,493e3f80-062e-44ac-afd0-8fd74e359880
+441,1,2,female,45,1,1,F.C.C. 13529,26.25,none,S,Hart, Mrs, Bumkyryc (Oswwyd Ygu Tcielgyibf),615.40225,59adef7c-9d38-40c5-b45f-dfbab7bcdbf8
+536,1,2,female,7,0,2,F.C.C. 13529,26.25,none,S,Hart, Miss, Ale Kyryoz,615.40225,87c33269-37de-4547-b08c-1e1053844f8e
+638,0,2,male,31,1,1,C.A. 31921,26.25,none,S,Collyer, Mr, Bumkyy,615.40225,297cb1fd-68b1-4a34-a8a7-ceb55e48153f
+802,1,2,female,31,1,1,C.A. 31921,26.25,none,S,Collyer, Mrs, Bumkyy (Pcoswyrdy Igtyi Fagy),615.40225,99244f34-e312-4738-b92d-777a587fc60a
+417,1,2,female,34,1,1,28220,32.5,none,S,Drew, Mrs, Bumyt Rycoiw (Wydy Ggocbe Lgkibfuaf),761.6885,e98f6dbd-abbb-4aa1-8cd5-fad5bef393ff
+616,1,2,female,24,1,2,220845,65,none,S,Herman, Miss, Aleky,1522.377,6c820411-5cd8-4013-a808-0ecd0f5e48e4
+755,1,2,female,48,1,2,220845,65,none,S,Herman, Mrs, Bumyyr (Pozi Wyrut),1522.377,5ed84322-30dd-4ef5-b9f3-3bef062352a0
+146,0,2,male,19,1,1,C.A. 33112,36.75,none,S,Nicholls, Mr, Bumytr Pcoswyr,861.16315,fd37382e-8923-423b-878b-00c7acf2c297
+550,1,2,male,8,1,1,C.A. 33112,36.75,none,S,Davies, Master, Bumk Typcos Ww,861.16315,18218aa3-90e6-494d-972d-e92cf8e2c064
+73,0,2,male,21,0,0,S.O.C. 14879,73.5,none,S,Hood, Mr, Almkyry Cz,1721.3263,b1dbdbe0-aacf-4543-b1a5-d2f051fb62e4
+121,0,2,male,21,2,0,S.O.C. 14879,73.5,none,S,Hickman, Mr, Blektyy Coiwwy,1721.3263,5fba5cec-4948-4da3-baf2-29b4cbf62f0b
+386,0,2,male,18,0,0,S.O.C. 14879,73.5,none,S,Davies, Mr, Blektyp Coswy,1721.3263,aeb32db7-0115-48cc-9ee8-2bd5fdb95049
+656,0,2,male,24,2,0,S.O.C. 14879,73.5,none,S,Hickman, Mr, Buekyrp Cosw,1721.3263,57ecd14d-d15f-40c3-bcc0-0e0a66660ccb
+666,0,2,male,32,2,0,S.O.C. 14879,73.5,none,S,Hickman, Mr, Bumyt,1721.3263,5b73ae68-367c-40db-8ec3-886a02d11173
+162,1,2,female,40,0,0,C.A. 33595,15.75,none,S,Watt, Mrs," Bumyt (Ypoziwyrd ""Tigtyi"" Elgkib Fuqfy)",369.64135,7325f4c9-5368-461c-9067-0b4e68b0d69e
+273,1,2,female,41,0,1,250644,19.5,none,S,Mellinger, Mrs, (Alekyrycz Iwwy Dyigtybf),457.4131,58423ac9-abcd-49dc-ab16-633dc0daecd1
+447,1,2,female,13,0,1,250644,19.5,none,S,Mellinger, Miss, Bumytyyco Syyrut,457.4131,39f2ba49-6345-40ff-92fa-c790eedad734
+721,1,2,female,6,0,1,248727,33,none,S,Harper, Miss," Almyy Rycziy ""Wydy""",773.3914,32b49064-aa07-434e-a0d8-3018bd49e33d
+849,0,2,male,28,0,1,248727,33,none,S,Harper, Rev, Bumk,773.3914,bc63f244-7984-4a7a-8d1a-c3dca24a12f2
+184,1,2,male,1,2,1,230136,39,F4,S,Becker, Master, Bumkyrp C,913.8262,5b0528b5-7cb2-4731-a597-ea5a654c8c62
+619,1,2,female,4,2,1,230136,39,F4,S,Becker, Miss, Bumyyr Pooiwy,913.8262,45936733-34a4-42b9-a418-77cb5ab8033a
+671,1,2,female,40,1,1,29750,39,none,S,Brown, Mrs, Blekyr Pozsyyr Dygutyb (Elikibodq Fyhwydihy Xobt),913.8262,c3a0b1fe-3b8e-45c4-9eba-e0c6bdaf1c84
+685,0,2,male,60,1,1,29750,39,none,S,Brown, Mr, Blekyr Pozsyyr Dygutyb,913.8262,7444ed15-faec-49ef-90f4-b04986252393
+293,0,2,male,36,0,0,SC/Paris 2163,12.875,D,C,Levy, Mr, Bumy Typcoiw,302.349675,33875e70-f848-47e3-8ad3-5ce01eb17f06
+408,1,2,male,3,1,1,29106,18.75,none,S,Richards, Master, Bumkyyp Cosy,439.85875,7f2cc07f-e267-4f69-b6bd-5f9c88552a59
+438,1,2,female,24,2,3,29106,18.75,none,S,Richards, Mrs, Bumkyy (Ycosy Wydtigt),439.85875,a0b2421a-46ed-4060-804b-cf9de6745ead
+59,1,2,female,5,1,2,C.A. 34651,27.75,none,S,West, Miss, Bumktypco Sywyut,650.51095,9e6f75e9-8c7b-4121-8e5b-7c8938e6fb28
+451,0,2,male,36,1,2,C.A. 34651,27.75,none,S,West, Mr, Almy Yrpcos,650.51095,0e96b1c4-c7a8-4075-beaf-c36844e06728
+473,1,2,female,33,1,2,C.A. 34651,27.75,none,S,West, Mrs, Almy Yrpcos (Ywy Dygu Tybfl),650.51095,6670313f-642d-4731-b5ea-f3614c4884c0
+323,1,2,female,30,0,0,234818,12.35,none,Q,Slayter, Miss, Bumky Ryco,290.06163,f4621716-facd-4f43-aabf-cd5a85ed7100
+627,0,2,male,57,0,0,219533,12.35,none,Q,Kirkland, Rev, Blektyp Coiwyrd,290.06163,44c685b2-e333-4c6f-82c9-dff493096778
+136,0,2,male,23,0,0,SC/PARIS 2133,15.0458,none,C,Richard, Mr, Aleky,353.1589856,d5fa7027-d19b-434d-af59-329626606af0
+867,1,2,female,27,1,0,SC/PARIS 2149,13.8583,none,C,Duran y More, Miss, Alektyyc,325.3645981,27389bf8-6463-4c00-8baf-77986920d9f5
+818,0,2,male,31,1,1,S.C./PARIS 2079,37.0042,none,C,Mallet, Mr, Almytr,867.1129044,da82b24a-f777-45e0-abe5-ca456ca33e5f
+828,1,2,male,1,0,2,S.C./PARIS 2079,37.0042,none,C,Mallet, Master, Almky,867.1129044,5e3268ef-9923-4a4e-95a1-4df3564aab28
+474,1,2,female,23,0,0,SC/AH Basle 541,13.7917,D,C,Jerwan, Mrs, Alek T (Rycoi Wyrdti Gtyiflikq),323.8057719,5ec3b69a-b3c7-43cc-ad36-8d5650efcfe4
+10,1,2,female,14,1,0,237736,30.0708,none,C,Nasser, Mrs, Bumkyryc (Osywy Utgut),704.8311306,95eb30ec-ab54-4eb1-a521-fe5455d79396
+151,0,2,male,51,0,0,S.O.P. 1166,12.525,none,S,Bateman, Rev, Bumytr Poziw,294.157645,d15f1326-f82e-4a78-a72a-45715c25f322
+400,1,2,female,28,0,0,240929,12.65,none,S,Trout, Mrs, Bumkyyp C (Ziwwyu T),297.08337,37efff3c-bd4d-4bd8-a25d-3619e919ff3b
+240,0,2,male,33,0,0,SCO/W 1585,12.275,none,S,Hunt, Mr, Buekty Pozsy,288.306195,39d97c00-8e6c-4dc2-a89d-99361cb89279
+44,1,2,female,3,1,2,SC/Paris 2123,41.5792,none,C,Laroche, Miss, Bumytry Cosyy Ydti Utcbea,974.1944394,09e93e3b-ca5f-4b83-a406-97b7570576f5
+609,1,2,female,22,1,2,SC/Paris 2123,41.5792,none,C,Laroche, Mrs, Bumytr (Poziywru Tigoy Beaiki Bodafhyy),974.1944394,5b1ba030-edde-4724-8560-fc48ac93b2f1
+686,0,2,male,25,1,2,SC/Paris 2123,41.5792,none,C,Laroche, Mr, Bumytr Pcosywru Tigocbeag,974.1944394,8c3269fc-b7a1-4ee8-bee1-ae69bacce70e
+362,0,2,male,29,1,0,SC/PARIS 2167,27.7208,none,C,del Carlo, Mr, Bumytryozi,649.8275006,11fedee7-9068-4751-9a38-9e19ba103f78
+180,0,3,male,36,0,0,LINE,0,none,S,Leonard, Mr, Buekyr,1,daa52529-9aa7-4844-84bd-7675c6d71c5a
+272,1,3,male,25,0,0,LINE,0,none,S,Tornquist, Mr, Bumkyyp Coswy,1,5e5cd7c1-3ef2-4f98-ad02-252e6e392c29
+303,0,3,male,19,0,0,LINE,0,none,S,Johnson, Mr, Bumkyyp Cosyyru Tg,1,bcdc9f29-63d3-47fd-8c0c-3e09dabd50e6
+598,0,3,male,49,0,0,LINE,0,none,S,Johnson, Mr, Almkyr,1,4211c57a-fb3a-48ec-91d8-4a45b6f2e256
+144,0,3,male,19,0,0,365222,6.75,none,Q,Burke, Mr, Bumytyyc,158.98915,b7ed09b0-a180-499b-9818-99b427a79fcf
+655,0,3,female,18,0,0,365226,6.75,none,Q,Hegarty, Miss," Bumyty ""Pozi""",158.98915,0a692c0c-b40f-450e-b318-df3e0b95ba27
+1,0,3,male,22,1,0,A/5 21171,7.25,none,S,Braund, Mr, Alek Typcos,170.69205,2c21d478-1a34-486f-a733-55f51a64e5d1
+95,0,3,male,59,0,0,364500,7.25,none,S,Coxon, Mr, Bumyyr,170.69205,b2c468b6-0550-4abf-bb27-b03841349b17
+213,0,3,male,22,0,0,A/5 21174,7.25,none,S,Perkin, Mr, Bumk Typco,170.69205,e207a626-27f4-4571-bc03-168aae354b65
+321,0,3,male,22,0,0,A/5 21172,7.25,none,S,Dennis, Mr, Bumyyr,170.69205,33bf789e-4d4e-43ca-9a13-803dda03289b
+366,0,3,male,30,0,0,C 7076,7.25,none,S,Adahl, Mr, Buekyrp Cosw Wydtig,170.69205,808d912b-bbd7-4455-a6f9-bde148dc99e1
+377,1,3,female,22,0,0,C 7077,7.25,none,S,Landergren, Miss, Aumyty Ycosyy,170.69205,a6111184-8d8d-48b9-9f06-e5e5684f22ca
+492,0,3,male,21,0,0,SOTON/OQ 3101317,7.25,none,S,Windelov, Mr, Aumyt,170.69205,d71f94fb-51f6-4181-b062-6d2f6847edbe
+593,0,3,male,47,0,0,A/5 3902,7.25,none,S,Elsbury, Mr, Bumkyyp Cosyw,170.69205,f323bdc4-fc8d-42d4-b9bd-31d8f5b8e235
+786,0,3,male,25,0,0,374887,7.25,none,S,Harmer, Mr, Almytyp (Cosyw Rutgut),170.69205,cbcfd318-b721-4ae7-8de4-650ba8fba3c4
+142,1,3,female,22,0,0,347081,7.75,none,S,Nysten, Miss, Almy Typoo,182.39495,ce1488e4-36b0-4e75-a489-826ba1e8239a
+209,1,3,female,16,0,0,367231,7.75,none,Q,Carr, Miss," Bumyt ""Ypcos""",182.39495,ec19f1b7-d34a-4a05-850c-390e9fc06d5a
+277,0,3,female,45,0,0,347073,7.75,none,S,Lindblom, Miss, Aumytry Cziwwydti,182.39495,7d47dbf7-05b6-4e17-951d-d990fa0d9a20
+281,0,3,male,65,0,0,336439,7.75,none,Q,Duane, Mr, Blekt,182.39495,fe43a7b4-f6e7-4a14-a3fa-a5dc5b1b38ad
+290,1,3,female,22,0,0,370373,7.75,none,Q,Connolly, Miss, Bumy,182.39495,f7b80a7a-8c45-4347-96c0-b431f1f36146
+407,0,3,male,51,0,0,347064,7.75,none,S,Widegren, Mr, Bumk/Trycziw Wydyg,182.39495,2976c9f8-164e-447e-a178-c33359626315
+502,0,3,female,21,0,0,364846,7.75,none,Q,Canavan, Miss, Bumy,182.39495,2381ee51-227f-426e-aaaf-ade5c76e0ade
+511,1,3,male,29,0,0,382651,7.75,none,Q,Daly, Mr, Aumyty Pozsywr,182.39495,2c2288ac-9dda-4ce4-b5fb-97da872a87a8
+750,0,3,male,31,0,0,335097,7.75,none,Q,Connaghton, Mr, Bumkyyp,182.39495,6a915b1a-419f-4bb7-a4a4-4c9d5eb7cd89
+776,0,3,male,18,0,0,347078,7.75,none,S,Myhrman, Mr, Bumk Typoos Ywydyg Gocbelg,182.39495,497be091-d75d-409d-86e1-55018f937641
+891,0,3,male,32,0,0,370376,7.75,none,Q,Dooley, Mr, Bumkyrp,182.39495,162ba2b4-01bc-4a2d-977d-ae6bc4ae5452
+81,0,3,male,22,0,0,345767,9,none,S,Waelens, Mr, Almytry,211.6522,b7ba3db0-a4b6-4b68-8a00-b2e897771ddf
+874,0,3,male,47,0,0,345765,9,none,S,Vander Cruyssen, Mr, Bumkyr,211.6522,1351c4ef-96fd-4aa3-b56a-abddb3f6a426
+82,1,3,male,29,0,0,345779,9.5,none,S,Sheerlinck, Mr, Bum Kyrpozs,223.3551,628a21dc-af48-4dcd-bc2b-3db1038a33a1
+201,0,3,male,28,0,0,345770,9.5,none,S,Vande Walle, Mr, Bumkyr Poziyw,223.3551,995b98be-10bf-4c78-8323-16794b88735c
+283,0,3,male,16,0,0,345778,9.5,none,S,de Pelsmaeker, Mr, Almytr,223.3551,12cb90ef-326b-41c5-b4ec-3b66451c772a
+287,1,3,male,30,0,0,345774,9.5,none,S,de Mulder, Mr, Bleytypo,223.3551,f98ccb07-af32-4789-bdf8-dfb46721f242
+356,0,3,male,28,0,0,345783,9.5,none,S,Vanden Steen, Mr, Bue Kyryc,223.3551,ac163762-f11d-497e-bb1a-0b65ddc10540
+442,0,3,male,20,0,0,345769,9.5,none,S,Hampe, Mr, Buek,223.3551,a0dec701-5f15-4e4a-8c92-2999559d9a25
+753,0,3,male,33,0,0,345780,9.5,none,S,Vande Velde, Mr, Bumytryc Ziwyrd,223.3551,59866d25-efd6-4864-a78c-110517dbc554
+771,0,3,male,24,0,0,345781,9.5,none,S,Lievens, Mr, Bumy Yypo,223.3551,40df307a-fcf6-41c5-8455-22e89a7795ad
+133,0,3,female,47,1,0,A/5. 3337,14.5,none,S,Robins, Mrs, Alekyrpoz I (Wwydy Ggocifa Gyibo),340.3841,a5d7c9c6-e30b-4f77-ac47-0624af1e27e9
+576,0,3,male,19,0,0,358585,14.5,none,S,Patchett, Mr, Buekty,340.3841,c184286e-1a40-410e-9c61-e9390e48b706
+189,0,3,male,40,1,1,364849,15.5,none,Q,Bourke, Mr, Bumk,363.7899,f4a7bcc3-5d30-411f-9c19-a88d58c1b0c8
+658,0,3,female,32,1,1,364849,15.5,none,Q,Bourke, Mrs, Bumk (Typcosywy),363.7899,e716a06e-b8ef-4d7b-8064-26cea969c034
+19,0,3,female,31,1,0,345763,18,none,S,Vander Planke, Mrs, Bumyyr (Ycosyy Rutiu Tybfagyibfuqy),422.3044,2c445552-23c3-4339-be4f-8378dceae44e
+39,0,3,female,18,2,0,345764,18,none,S,Vander Planke, Miss, Aumytry Cosyy,422.3044,f0fb6539-7aa0-4686-9bff-f6a79a73e3be
+334,0,3,male,16,2,0,345764,18,none,S,Vander Planke, Mr, Bue Ytrycziw,422.3044,63c7a017-39ab-4865-b2f7-68d3970beb50
+17,0,3,male,2,4,1,382652,29.125,none,Q,Rice, Master, Aumyty,682.693925,71ce27f7-0b86-4a34-beb1-3f44c73669a4
+172,0,3,male,4,4,1,382652,29.125,none,Q,Rice, Master, Almkyr,682.693925,2e66315f-baf4-47f1-a168-e57cce54210a
+279,0,3,male,7,4,1,382652,29.125,none,Q,Rice, Master, Alek,682.693925,7302a318-8e0d-41a8-a4d2-4c6a89d8c5c7
+788,0,3,male,8,4,1,382652,29.125,none,Q,Rice, Master, Buekty Pozs,682.693925,bedf88a5-8897-4245-a943-79a941358a03
+886,0,3,female,39,0,5,382652,29.125,none,Q,Rice, Mrs, Bumkyyp (Coswyrut Gutcif),682.693925,7957c283-0460-4d97-a0a2-742b627e9f1d
+87,0,3,male,16,1,3,W./C. 6608,34.375,none,S,Ford, Mr, Bumkyyp Coiw,805.574375,babfb5fb-67d7-447c-8d4b-7f39a9a7a9a4
+148,0,3,female,9,2,2,W./C. 6608,34.375,none,S,Ford, Miss," Bumyty Pozsyy ""Ruti""",805.574375,b9364680-7f43-4dea-a200-d63a4fd7e6fc
+437,0,3,female,21,2,2,W./C. 6608,34.375,none,S,Ford, Miss," Buekyry Coswyrut ""Guoci""",805.574375,9943df93-19e5-4e89-ae69-9025e71d803e
+737,0,3,female,48,1,3,W./C. 6608,34.375,none,S,Ford, Mrs, Almytr (Pozsywyd Ygg Tybfag),805.574375,55763af7-a7db-4318-95d6-84be3e5aa8ed
+280,1,3,female,35,1,1,C.A. 2673,20.25,none,S,Abbott, Mrs, Blektyp (Cosy Wydt),474.96745,ef6e43de-ee3c-4723-b221-4dcb8bbec020
+747,0,3,male,16,1,1,C.A. 2673,20.25,none,S,Abbott, Mr, Bumktypo Oswyrd,474.96745,45ef5f51-6416-4d0a-b89e-305a332ed65e
+244,0,3,male,22,0,0,STON/O 2. 3101275,7.125,none,S,Maenpaa, Mr, Bumky Ypoziwwydy,167.766325,886e8d3e-e983-49e4-aa09-3deb7b2970fc
+434,0,3,male,17,0,0,STON/O 2. 3101274,7.125,none,S,Kallio, Mr, Bumytyy Ozsywr,167.766325,ff7176b2-787e-454e-81ac-feff15699319
+591,0,3,male,35,0,0,STON/O 2. 3101273,7.125,none,S,Rintamaki, Mr, Bumky,167.766325,26ec5d89-f05c-4e78-9922-0931c807a453
+762,0,3,male,41,0,0,SOTON/O2 3101272,7.125,none,S,Nirva, Mr, Aumytry Ozsywy Uygu,167.766325,3202b894-eeb3-4746-81af-33265ff93e4b
+423,0,3,male,29,0,0,315082,7.875,none,S,Zimmerman, Mr, Bue,185.320675,657a33ad-9ed5-4d37-8da7-41133c37dbc6
+51,0,3,male,7,4,1,3101295,39.6875,none,S,Panula, Master, Bumy Tyyco,929.9176875,1afbaafc-c705-40b5-bd8e-0ccd5a5d710b
+165,0,3,male,1,4,1,3101295,39.6875,none,S,Panula, Master, Aumy Typcosy,929.9176875,d64b6956-3d7f-44c2-981c-eaa2c81dd5b8
+267,0,3,male,16,4,1,3101295,39.6875,none,S,Panula, Mr, Almytry Ozsyw,929.9176875,a2df90b4-3bfd-45a4-8110-166d4050ec32
+639,0,3,female,41,0,5,3101295,39.6875,none,S,Panula, Mrs, Bumy (Typoo Iwyruy Igoci),929.9176875,c3bb40cd-b9a0-4ae5-b7ae-147e710c2d35
+687,0,3,male,14,4,1,3101295,39.6875,none,S,Panula, Mr, Bueky Ypcosw,929.9176875,e5f3386e-7675-4ca0-8a18-1eed14770f4a
+825,0,3,male,2,4,1,3101295,39.6875,none,S,Panula, Master, Almy Yrpoziw,929.9176875,849114ac-1d22-4454-b3cf-2396ba879e3e
+15,0,3,female,14,0,0,350406,7.8542,none,S,Vestrom, Miss, Bumky Ypozsy Yrutguty,184.8338344,97f523b2-16df-4f55-86e6-06d246bbdb33
+92,0,3,male,20,0,0,347466,7.8542,none,S,Andreasson, Mr, Buek Yrpoz,184.8338344,358a8acf-788c-4530-a8f9-209df8b33f76
+176,0,3,male,18,1,1,350404,7.8542,none,S,Klasen, Mr, Blek Yrpoz,184.8338344,f384875e-2bb2-4e61-8fb7-e58b83d185a5
+193,1,3,female,19,1,0,350046,7.8542,none,S,Andersen-Jensen, Miss, Bumky Rpcoswyru Tiutcifa,184.8338344,1e6b6f24-3dd5-42a6-bfe8-0a4cdaa9ae42
+282,0,3,male,28,0,0,347464,7.8542,none,S,Olsson, Mr, Bumk Typoz Sywydtgut,184.8338344,f7452c37-57e1-4f2b-9efe-e61d2b2df4ee
+316,1,3,female,26,0,0,347470,7.8542,none,S,Nilsson, Miss, Bumkyry Cosywydy,184.8338344,02509e2a-f10e-449a-bd82-a33b3c59bcf7
+397,0,3,female,31,0,0,350407,7.8542,none,S,Olsson, Miss, Aleky,184.8338344,091ec59b-2cd1-4ad2-87fe-906e1511368c
+570,1,3,male,32,0,0,350417,7.8542,none,S,Jonsson, Mr, Bumk,184.8338344,e5da9277-cfc7-422d-b625-c19e1052abc7
+624,0,3,male,21,0,0,350029,7.8542,none,S,Hansen, Mr, Bumky Ryczsyyrd,184.8338344,581bf0ba-c41d-44f8-8891-68a9d7c26fe6
+641,0,3,male,20,0,0,350050,7.8542,none,S,Jensen, Mr, Bumk Typoz,184.8338344,1f0bb706-e365-45f0-9a1b-42ae3ae71c1f
+705,0,3,male,26,1,0,350025,7.8542,none,S,Hansen, Mr, Bumkyr Poos,184.8338344,ab3b362b-a759-4fa0-b98d-3fb1df532984
+772,0,3,male,48,0,0,350047,7.8542,none,S,Jensen, Mr, Buekt Rycos,184.8338344,3a30bb1c-2e0c-4a2f-9a15-05cb3c55e412
+834,0,3,male,23,0,0,347468,7.8542,none,S,Augustsson, Mr, Almytr,184.8338344,b49bad56-e28c-4196-b222-d66ddc252cc8
+61,0,3,male,22,0,0,2669,7.2292,none,C,Sirayanian, Mr, Almyt,170.2052094,83068370-8371-4787-b703-00f51d2d3b2b
+353,0,3,male,15,1,1,2695,7.2292,none,C,Elias, Mr, Bumkyyp,170.2052094,9e357f89-59a3-4c5c-bd99-8b68fcf4d741
+533,0,3,male,17,1,1,2690,7.2292,none,C,Elias, Mr, Bumytr Pc,170.2052094,23b84b56-c0e9-49ef-a3cf-fcefee81bd37
+763,1,3,male,20,0,0,2663,7.2292,none,C,Barah, Mr, Bumky Ypco,170.2052094,ebc658e1-e1bc-456e-8ff0-ef18f4370350
+781,1,3,female,13,0,0,2687,7.2292,none,C,Ayoub, Miss, Bumyyry,170.2052094,6f1c2699-90a1-42bf-85c0-cf5db83100e9
+799,0,3,male,30,0,0,2685,7.2292,none,C,Ibrahim Shawah, Mr, Auektypc,170.2052094,c10b29ef-20df-4f1b-bc4f-d1361c7e9029
+9,1,3,female,27,0,2,347742,11.1333,none,S,Johnson, Mrs, Almyt R (Ycosywydt Gutcifliki Bodq),261.5837931,e85f4902-b270-4727-b601-63ab8064bbcb
+173,1,3,female,1,1,1,347742,11.1333,none,S,Johnson, Miss, Aleytyp Oziyw,261.5837931,0ae12830-1bec-4b0e-ac55-dd48e27ee66a
+870,1,3,male,4,1,1,347742,11.1333,none,S,Johnson, Master, Bumytr Pcoiwyr,261.5837931,7eb824fd-5dc0-4d19-a750-45d9c92550e1
+23,1,3,female,15,0,0,330923,8.0292,none,Q,McGowan, Miss," Almy ""Yrpoo""",188.9298494,137306a0-9bfd-4882-8ccc-c692c4a7851a
+104,0,3,male,33,0,0,7540,8.6542,none,S,Johansson, Mr, Bumkyr Poos,203.5584744,400258ae-f2c8-4ae1-b420-65f058fc821e
+139,0,3,male,16,0,0,7534,9.2167,none,S,Osen, Mr, Alek Yryc,216.7242369,aa3d4a3c-2c77-40a2-9e09-dda4182bab83
+678,1,3,female,18,0,0,4138,9.8417,none,S,Turja, Miss, Almy Typoo,231.3528619,e3076774-702a-4e82-b7cb-7194d850135b
+198,0,3,male,42,0,1,4579,8.4042,none,S,Olsen, Mr, Bumk Tyycziww Ydtguoc,197.7070244,9b2c201e-7823-4740-bc02-c3e058e1fd97
+8,0,3,male,2,3,1,349909,21.075,none,S,Palsson, Master, Bumky Ryoziww,494.277235,780fefd6-b6c7-4e21-beb2-f0deff1dafc2
+25,0,3,female,8,3,1,349909,21.075,none,S,Palsson, Miss, Bumkyrp Cosywy,494.277235,497716ac-9b28-4e58-b892-a2e402ae76ff
+375,0,3,female,3,3,1,349909,21.075,none,S,Palsson, Miss, Bleky Ryozi,494.277235,606c77ab-db72-42c8-999c-b56d2a238e73
+568,0,3,female,29,0,4,349909,21.075,none,S,Palsson, Mrs, Bumk (Yrpo Ziwwydyi Gocbfagk),494.277235,c5165db4-a89c-454a-a6c2-34461ad5b389
+132,0,3,male,20,0,0,SOTON/O.Q. 3101307,7.05,none,S,Coelho, Mr, Bumytryc Ziwwydtiu,166.01089,a844070c-bc75-4afa-8865-25dccef588b4
+211,0,3,male,24,0,0,SOTON/O.Q. 3101311,7.05,none,S,Ali, Mr, Almyt,166.01089,caaf846c-8323-40d2-a0ff-fab8abcd6dc8
+364,0,3,male,35,0,0,SOTON/O.Q. 3101310,7.05,none,S,Asim, Mr, Aleky,166.01089,82e397df-cb10-4468-9492-0bb1ac7c09ff
+466,0,3,male,38,0,0,SOTON/O.Q. 3101306,7.05,none,S,Goncalves, Mr, Bumyyr Ycziwwrut,166.01089,192e24d7-138c-4c88-8682-7864d9f46325
+785,0,3,male,25,0,0,SOTON/O.Q. 3101312,7.05,none,S,Ali, Mr, Bumkyyp,166.01089,a41f074f-192a-43b4-82cc-d30728f4caab
+885,0,3,male,25,0,0,SOTON/OQ 392076,7.05,none,S,Sutehall, Mr, Bumky Rp,166.01089,dbf4c9ac-6c0e-45bb-8516-ee9c495befda
+650,1,3,female,23,0,0,CA. 2314,7.55,none,S,Stanley, Miss, Ale Kyrpoz Iwwyu,177.71379,f46e13b5-df89-4bd3-9e85-c2ba9e1f5686
+846,0,3,male,42,0,0,C.A. 5547,7.55,none,S,Abbing, Mr, Almkyry,177.71379,124899e5-81be-4f65-8660-ddabbfaf46df
+52,0,3,male,21,0,0,A/4. 39886,7.8,none,S,Nosworthy, Mr, Bumkyrp Cosyw,183.56524,6dc07161-5b60-4000-afdf-c350dc3eed3f
+70,0,3,male,26,2,0,315151,8.6625,none,S,Kink, Mr, Bumkyrp,203.7527425,fa9f8c94-1380-4298-8d1a-d3695a5fe044
+164,0,3,male,17,0,0,315093,8.6625,none,S,Calic, Mr, Bumy,203.7527425,9e8605e6-5d53-4a23-ad7d-c541fa6aed41
+286,0,3,male,33,0,0,349239,8.6625,none,C,Stankovic, Mr, Alek,203.7527425,0bc37660-02dd-438d-acc0-bf6545b77313
+350,0,3,male,42,0,0,315088,8.6625,none,S,Dimic, Mr, Bumyt,203.7527425,5e0e9967-d905-424a-a4d0-f9db631bb0fd
+405,0,3,female,20,0,0,315096,8.6625,none,S,Oreskovic, Miss, Bumyty,203.7527425,b8d486bf-594e-4044-b81a-30d9636a9cf5
+472,0,3,male,38,0,0,315089,8.6625,none,S,Cacic, Mr, Bumy,203.7527425,4054a7b5-9fab-4e8f-a5df-d10fce982ded
+501,0,3,male,17,0,0,315086,8.6625,none,S,Calic, Mr, Bumyt,203.7527425,59e5ea27-e5c3-4ed2-849f-17a9911fc2ec
+535,0,3,female,30,0,0,315084,8.6625,none,S,Cacic, Miss, Bumyty,203.7527425,1e4d721c-10ac-4473-a458-7cd6f8e2dbd3
+726,0,3,male,20,0,0,315094,8.6625,none,S,Oreskovic, Mr, Bumy,203.7527425,307f42b2-6ce3-4d7c-89ad-aa0b7a229de3
+822,1,3,male,27,0,0,315098,8.6625,none,S,Lulic, Mr, Bumyty,203.7527425,115b0dfd-b34f-4c52-ad45-d642925f93d1
+837,0,3,male,21,0,0,315097,8.6625,none,S,Pasic, Mr, Bumyt,203.7527425,b4815f3f-4f42-4d6e-89cb-aa1137f53b64
+845,0,3,male,17,0,0,315090,8.6625,none,S,Culumovic, Mr, Bumy,203.7527425,b4b383e0-0e5c-4b1b-9f1d-bd3b99530dbf
+26,1,3,female,38,1,5,347077,31.3875,none,S,Asplund, Mrs, Bumk Yrpoz (Sywru Yigocbe Agyquo Dafyhwkid),735.6495475,7723e2e2-4ddb-42ec-a27f-bf1db6610122
+183,0,3,male,9,4,2,347077,31.3875,none,S,Asplund, Master, Blekyrpo Ziwwyd Tigo,735.6495475,e113f4e3-8ae2-4543-9a54-82f9c057db69
+234,1,3,female,5,4,2,347077,31.3875,none,S,Asplund, Miss, Bumkyyp Coswwyd,735.6495475,71709071-a663-40db-b591-8bedec44d5c8
+262,1,3,male,3,4,2,347077,31.3875,none,S,Asplund, Master, Almyt Rycz Sywyd,735.6495475,a40df473-7771-4507-81ee-ef0e451105bf
+351,0,3,male,23,0,0,7267,9.225,none,S,Odahl, Mr, Bumk Typcos,216.918505,86513ede-b914-4f4b-b8b0-f2a0624212da
+683,0,3,male,20,0,0,6563,9.225,none,S,Olsvigen, Mr, Blek Yrpozsyw,216.918505,1936e040-c647-4232-ba25-a6eac6df517c
+60,0,3,male,11,5,2,CA 2144,46.9,none,S,Goodwin, Master, Bumkyyp Cziwyrutg,1098.73202,20bbf406-c2b4-412a-88e3-776357d454e2
+72,0,3,female,16,5,2,CA 2144,46.9,none,S,Goodwin, Miss, Bumkyyp Ozi,1098.73202,a4361515-f4d7-4120-a2f9-d6bef2dde0f7
+387,0,3,male,1,5,2,CA 2144,46.9,none,S,Goodwin, Master, Bumkyy Poosywr,1098.73202,8931bfe2-d4fa-4c66-9ff1-e71c4fa36ca8
+481,0,3,male,9,5,2,CA 2144,46.9,none,S,Goodwin, Master, Bumytr Pozsyw,1098.73202,067ddfdd-98b1-41d8-9d2b-7e171de600a9
+679,0,3,female,43,1,6,CA 2144,46.9,none,S,Goodwin, Mrs, Blekyrycz (Iywydti Gocif),1098.73202,f0ddcd7d-d135-40e6-8c27-cb709a531261
+684,0,3,male,14,5,2,CA 2144,46.9,none,S,Goodwin, Mr, Blektyp Ozsywr,1098.73202,f9aa9146-f196-4405-9cdc-34e550d9e860
+480,1,3,female,2,0,1,3101298,12.2875,none,S,Hirvonen, Miss, Bumkyr Y,288.5987675,5fdfc3dd-5533-4d29-bbd9-43c15a38bcc2
+94,0,3,male,26,1,2,C.A. 2315,20.575,none,S,Dean, Mr, Bumktyp Cziww,482.574335,3960a75f-1fc5-4cea-a2ad-3c7022447d77
+789,1,3,male,1,1,2,C.A. 2315,20.575,none,S,Dean, Master, Bumktyp Cosy,482.574335,9b5459ca-b39d-419a-b99f-0c14f4b78702
+3,1,3,female,26,0,0,STON/O2. 3101282,7.925,none,S,Heikkinen, Miss, Bueky,186.490965,eee8ea8b-c000-4e97-98f7-6caeb15b8783
+69,1,3,female,17,4,2,3101281,7.925,none,S,Andersson, Miss, Almy Yrycoswwy,186.490965,c442901d-8171-4c40-a2b1-1701fed41cd6
+105,0,3,male,37,2,0,3101276,7.925,none,S,Gustafsson, Mr, Almytr Pozsywr,186.490965,24c25df2-ab73-469d-bbb7-a6e5b0d56db2
+116,0,3,male,21,0,0,STON/O 2. 3101294,7.925,none,S,Pekoniemi, Mr, Almytr,186.490965,91c2d6b2-01f9-42e1-beb5-a9af5090fbbd
+174,0,3,male,21,0,0,STON/O 2. 3101280,7.925,none,S,Sivola, Mr, Almky Rycziww,186.490965,636f3ffe-904e-4ce5-ab8c-1f0438544134
+217,1,3,female,27,0,0,STON/O2. 3101283,7.925,none,S,Honkanen, Miss, Aleyty,186.490965,37e9a4e2-e5d4-4c6d-97a3-52ca66481693
+383,0,3,male,32,0,0,STON/O 2. 3101293,7.925,none,S,Tikkanen, Mr, Bumy,186.490965,45003211-1b7b-49a8-a6cb-0b4d59c2f8ee
+393,0,3,male,28,2,0,3101277,7.925,none,S,Gustafsson, Mr, Bumyt Rycziw,186.490965,7f62c857-2156-464f-afba-9c4a75a258ca
+401,1,3,male,39,0,0,STON/O 2. 3101289,7.925,none,S,Niskanen, Mr, Bumy,186.490965,811379df-3b60-4e54-bc7f-d16270edd0a1
+415,1,3,male,44,0,0,STON/O 2. 3101269,7.925,none,S,Sundman, Mr, Bumyt Rycoiw,186.490965,59f2cc86-7dc8-4940-8146-6274deea9d47
+529,0,3,male,39,0,0,3101296,7.925,none,S,Salonen, Mr, Bumyt Rycziw,186.490965,d0013dd0-9d88-4b8b-96f1-c47775d2ab44
+580,1,3,male,32,0,0,STON/O 2. 3101286,7.925,none,S,Jussila, Mr, Aumyyr,186.490965,6a3bb1fb-9e5d-414b-8348-28da25e9f1f0
+637,0,3,male,32,0,0,STON/O 2. 3101292,7.925,none,S,Leinonen, Mr, Almky Rycziw,186.490965,48504e4a-8aca-43b3-8069-9a390e5bbc95
+665,1,3,male,20,1,0,STON/O 2. 3101285,7.925,none,S,Lindqvist, Mr, Aumy Typcoiw,186.490965,3ceed6aa-df9a-4140-829f-5ebdceec7e8b
+730,0,3,female,25,1,0,STON/O2. 3101271,7.925,none,S,Ilmakangas, Miss, Bueky Rycoi,186.490965,1e845b24-7122-48c5-8305-a93c6add0848
+745,1,3,male,31,0,0,STON/O 2. 3101288,7.925,none,S,Stranden, Mr, Bumy,186.490965,e0f336af-daf1-479d-884b-071102c47885
+817,0,3,female,23,0,0,STON/O2. 3101290,7.925,none,S,Heininen, Miss, Bumkty Poziy,186.490965,8c30db4f-5bd3-4852-9333-7eca5e66947c

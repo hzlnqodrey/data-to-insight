@@ -1,0 +1,22 @@
+parse-as-csv :body ',' true
+drop :body
+fill-null-or-empty :Cabin 'none'
+send-to-error empty(Age)
+parse-as-csv :Name ',' false
+drop Name
+fill-null-or-empty :Name_2 'none'
+rename Name_1 Last_Name
+rename Name_2 First_Name
+set-type :PassengerId integer
+parse-as-csv :First_Name '.' false
+drop First_Name
+drop First_Name_3
+rename First_Name_1 Salutation
+fill-null-or-empty :First_Name_2 'none'
+rename First_Name_2 First_Name
+send-to-error !dq:isNumber(Age) || !dq:isInteger(Age) || (Age == 0  || Age > 125)
+set-type :Age integer
+set-type :Fare double
+set-column Today_Fare (Fare * 23.4058)+1
+generate-uuid id
+mask-shuffle First_Name
