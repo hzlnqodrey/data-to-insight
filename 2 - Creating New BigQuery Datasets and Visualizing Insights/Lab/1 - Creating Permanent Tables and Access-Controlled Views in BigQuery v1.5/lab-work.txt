@@ -1,0 +1,161 @@
+Rules for creating tables with SQL in BigQuery
+
+Read through these create table rules which you will use as your guide when fixing broken queries:
+
+Either the specified column list or inferred columns from a query_statement (or both) must be present.
+
+When both the column list and the as query_statement clause are present, BigQuery ignores the names in the as query_statement clause and matches the columns with the column list by position.
+
+When the as query_statement clause is present and the column list is absent, BigQuery determines the column names and types from the as query_statement clause.
+
+Column names must be specified either through the column list or as query_statement clause.
+
+Duplicate column names are not allowed.
+
+Query 1: Columns, Columns, Columns
+Add this query in the query EDITOR, then Run the query, diagnose the error, and answer the questions that follow:
+
+#standardSQL
+# copy one day of ecommerce data to explore
+CREATE OR REPLACE TABLE ecommerce.all_sessions_raw_20170801
+ OPTIONS(
+   description="Raw data from analyst team into our dataset for 08/01/2017"
+ ) AS
+ SELECT fullVisitorId, * FROM `data-to-insights.ecommerce.all_sessions_raw`
+ WHERE date = '20170801'  #56,989 records
+;
+
+Query 2: Columns revisited
+Add this query in the query EDITOR, then Run the query, diagnose the error, and answer the questions that follow:
+
+#standardSQL
+# copy one day of ecommerce data to explore
+CREATE OR REPLACE TABLE ecommerce.all_sessions_raw_20170801
+#schema
+(
+  fullVisitorId STRING OPTIONS(description="Unique visitor ID"),
+  channelGrouping STRING OPTIONS(description="Channel e.g. Direct, Organic, Referral...")
+)
+ OPTIONS(
+   description="Raw data from analyst team into our dataset for 08/01/2017"
+ ) AS
+ SELECT * FROM `data-to-insights.ecommerce.all_sessions_raw`
+ WHERE date = '20170801'  #56,989 records
+;
+
+Note: You cannot specify a schema of fields for a new table which does not match the number of columns returned by the query statement. In the above a two column schema was specified with fullVisitorId and channelGrouping but in the query statement all columns returned (*) was specified.
+
+Query 3: It's Valid! Or is it?
+Add this query in the query EDITOR, then Run the query, diagnose the error, and answer the questions that follow:
+
+#standardSQL
+# copy one day of ecommerce data to explore
+CREATE OR REPLACE TABLE ecommerce.all_sessions_raw_20170801
+#schema
+(
+  fullVisitorId STRING OPTIONS(description="Unique visitor ID"),
+  channelGrouping STRING OPTIONS(description="Channel e.g. Direct, Organic, Referral...")
+)
+ OPTIONS(
+   description="Raw data from analyst team into our dataset for 08/01/2017"
+ ) AS
+ SELECT fullVisitorId, city FROM `data-to-insights.ecommerce.all_sessions_raw`
+ WHERE date = '20170801'  #56,989 records
+;
+
+Valid: This query will process 1.05 GB when run.
+
+
+Why is this valid query above not a good idea to run??
+
+[O] Duplicate column names in the query statement
+
+[O] [Answer] Although the number of columns match between the schema definition and the query statement, the actual column retrieved from the query statement for the channelGrouping column is not channelGrouping but rather the visitors city.
+
+[O] The channelGrouping should not be a STRING
+
+Remember Rule #2: when both the column list and the as query_statement clause are present, BigQuery ignores the names in the as query_statement clause and matches the columns with the column list by position.
+
+Query 4: The gatekeeper
+Run the below query in the query EDITOR, then diagnose the error and answer the questions that follow.
+
+#standardSQL
+# copy one day of ecommerce data to explore
+CREATE OR REPLACE TABLE ecommerce.all_sessions_raw_20170801
+#schema
+(
+  fullVisitorId STRING NOT NULL OPTIONS(description="Unique visitor ID"),
+  channelGrouping STRING NOT NULL OPTIONS(description="Channel e.g. Direct, Organic, Referral..."),
+  totalTransactionRevenue INT64 NOT NULL OPTIONS(description="Revenue * 10^6 for the transaction")
+)
+ OPTIONS(
+   description="Raw data from analyst team into our dataset for 08/01/2017"
+ ) AS
+ SELECT fullVisitorId, channelGrouping, totalTransactionRevenue FROM `data-to-insights.ecommerce.all_sessions_raw`
+ WHERE date = '20170801'  #56,989 records
+;
+
+Valid: This query will process 907.52 MB when run.
+
+
+What happens after you execute the above valid query? What would you change to prevent this?
+
+The query will fail. You need to specify fullVisitorId as nullable (NULL) to account for private browsing (e.g. Incognito)
+
+The query will fail. Change the data type for totalTransactionRevenue to be STRING to account for special characters
+
+The query will execute successfully.
+
+The query will fail. You need to specify totalTransactionRevenue as nullable (NULL) since not all visitors will buy
+
+Valid: This query will process 907.52 MB when run.
+
+
+What happens after you execute the above valid query? What would you change to prevent this?
+
+The query will fail. You need to specify fullVisitorId as nullable (NULL) to account for private browsing (e.g. Incognito)
+
+The query will fail. Change the data type for totalTransactionRevenue to be STRING to account for special characters
+
+The query will execute successfully.
+
+The query will fail. You need to specify totalTransactionRevenue as nullable (NULL) since not all visitors will buy
+
+Fix and re-run the modified query to confirm it executes successfully.
+
+Query 5: Working as intended
+Run this query in the query EDITOR, then diagnose the error and answer the questions that follow:
+
+#standardSQL
+# copy one day of ecommerce data to explore
+CREATE OR REPLACE TABLE ecommerce.all_sessions_raw_20170801
+#schema
+(
+  fullVisitorId STRING NOT NULL OPTIONS(description="Unique visitor ID"),
+  channelGrouping STRING NOT NULL OPTIONS(description="Channel e.g. Direct, Organic, Referral..."),
+  totalTransactionRevenue INT64 OPTIONS(description="Revenue * 10^6 for the transaction")
+)
+ OPTIONS(
+   description="Raw data from analyst team into our dataset for 08/01/2017"
+ ) AS
+ SELECT fullVisitorId, channelGrouping, totalTransactionRevenue FROM `data-to-insights.ecommerce.all_sessions_raw`
+ WHERE date = '20170801'  #56,989 records
+;
+
+Browse your ecommerce dataset panel to confirm the all_sessions_raw_(1) is present.
+
+Why is the full table name not showing?
+
+Answer: The table suffix 20170801 is automatically partitioned by day. If we created more tables for other days, the all_sessions_raw_(N) would increment by N distinct days of data. There is another lab that explores different ways of partitioning your data tables.
+
+What are the key benefits to formally defining a table schema as opposed to relying on your query statement for the field names and data types?
+
+All Correct
+You can specify expected data types (rather than rely on inference)
+
+You may not have any existing data yet to populate the table with inferred field names in a query statement
+
+You can specify field descriptions.
+
+You can specify REQUIRED fields (NOT NULL)
+
