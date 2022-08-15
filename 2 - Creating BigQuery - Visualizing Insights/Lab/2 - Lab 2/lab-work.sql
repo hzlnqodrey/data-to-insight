@@ -30,6 +30,15 @@ orderedQuantity > 0
 AND SAFE_DIVIDE(orderedQuantity,stockLevel) >= .8
 ORDER BY
   restockingLeadTime DESC
-  
+
 -- Copied!
 -- Note: If you specify a relative project name path like ecommerce.products instead of project_id.ecommerce.products, BigQuery will assume the current project.
+
+Query data from an external spreadsheet
+Click Compose New Query.
+
+Add the below query then Run:
+
+#standardSQL
+SELECT * FROM ecommerce.products_comments WHERE comments IS NOT NULL
+Copied!
