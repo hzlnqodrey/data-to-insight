@@ -47,3 +47,25 @@ LIMIT 5
 -- Notice that the query still processes 1.74 GB even though it returns 0 results. Why? The query engine needs to scan all records in the dataset to see if they satisfy the date matching condition in the WHERE clause. It must look at each record to compare the date against the condition of ‘20180708'.
 
 -- Additionally, the LIMIT 5 does not reduce the total amount of data processed, which is a common misconception.
+
+-- Common use-cases for date-partitioned tables
+-- Scanning through the entire dataset everytime to compare rows against a WHERE condition is wasteful. This is especially true if you only really care about records for a specific period of time like:
+
+-- All transactions for the last year
+-- All visitor interactions within the last 7 days
+-- All products sold in the last month
+-- Instead of scanning the entire dataset and filtering on a date field like we did in the earlier queries, we will now setup a date-partitioned table. This will allow us to completely ignore scanning records in certain partitions if they are irrelevant to our query.
+
+-- Create a new partitioned table based on date
+-- Click COMPOSE NEW QUERY and add the below query, then RUN:
+
+#standardSQL
+ CREATE OR REPLACE TABLE ecommerce.partition_by_day
+ PARTITION BY date_formatted
+ OPTIONS(
+   description="a table partitioned by date"
+ ) AS
+ SELECT DISTINCT
+ PARSE_DATE("%Y%m%d", date) AS date_formatted,
+ fullvisitorId
+ FROM `data-to-insights.ecommerce.all_sessions_raw`
