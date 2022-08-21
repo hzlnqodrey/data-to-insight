@@ -96,3 +96,6 @@ WHERE
 
 # 2. LEFT JOIN
 -> Return all rows fron the left table and matched rows from the right table
+
+# 3. RIGHT JOIN
+-> Return all rows from the right table and matched rows from the left table
