@@ -1,0 +1,3 @@
+JOINs give you fields from different tables
+
+UNIONs add more records to your existing table
