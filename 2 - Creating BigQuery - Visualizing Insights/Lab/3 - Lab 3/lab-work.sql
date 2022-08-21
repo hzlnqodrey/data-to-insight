@@ -22,3 +22,27 @@ LIMIT 5
 -- The query returns 5 results.
 
 -- Query webpage analytics for a sample of visitor
+
+-- Query webpage analytics for a sample of visitors in 2018
+-- Let's modify the query to look at visitors for 2018 now.
+
+-- In the Query Editor, add the below query:
+
+#standardSQL
+SELECT DISTINCT
+  fullVisitorId,
+  date,
+  city,
+  pageTitle
+FROM `data-to-insights.ecommerce.all_sessions_raw`
+WHERE date = '20180708'
+LIMIT 5
+
+-- Copied!
+-- The Query results will tell you how much data this query will process.
+
+-- Click RUN.
+
+-- Notice that the query still processes 1.74 GB even though it returns 0 results. Why? The query engine needs to scan all records in the dataset to see if they satisfy the date matching condition in the WHERE clause. It must look at each record to compare the date against the condition of ‘20180708'.
+
+-- Additionally, the LIMIT 5 does not reduce the total amount of data processed, which is a common misconception.
