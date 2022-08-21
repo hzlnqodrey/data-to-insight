@@ -108,3 +108,43 @@ You should see This query will process 0 B when run.
 -- Why is there 0 bytes processed?
 -- check
 -- The query engine knows which partitions already exist and knows that no partition exists for 2018-07-08 (the ecommerce dataset ranges from 2016-08-01 to 2017-08-01).
+
+-- Creating an auto-expiring partitioned table
+-- Auto-expiring partitioned tables are used to comply with data privacy statutes, and can be used to avoid unnecessary storage (which you'll be charged for in a production environment). If you want to create a rolling window of data, add an expiration date so the partition disappears after you're finished using it.
+
+-- Explore the available NOAA weather data tables
+-- In the left menu, in Explorer, click on + ADD DATA and select Pin a Project > Enter project name.
+
+-- Add_data4.png
+
+-- Enter bigquery-public-data and click Pin.
+
+-- Expand bigquery-public-data and search for noaa_gsod.
+
+-- Scroll through the tables in the noaa_gsod dataset (which are manually sharded and not partitioned)
+
+-- noaa_gsod5.png
+
+-- First, copy and paste this below query to Query editor:
+
+#standardSQL
+ SELECT
+   DATE(CAST(year AS INT64), CAST(mo AS INT64), CAST(da AS INT64)) AS date,
+   (SELECT ANY_VALUE(name) FROM `bigquery-public-data.noaa_gsod.stations` AS stations
+    WHERE stations.usaf = stn) AS station_name,  -- Stations may have multiple names
+   prcp
+ FROM `bigquery-public-data.noaa_gsod.gsod*` AS weather
+ WHERE prcp < 99.9  -- Filter unknown values
+   AND length(_TABLE_SUFFIX) = 4 AND CAST(_TABLE_SUFFIX AS int64) >= 2018
+   AND prcp > 0      -- Filter stations/days with no precipitation
+   AND CAST(_TABLE_SUFFIX AS int64) >= 2018
+ ORDER BY date DESC -- Where has it rained/snowed recently
+ LIMIT 10
+-- Copied!
+-- Note that the table wildcard * used in the FROM clause to limit the amount of tables referred to in the TABLE_SUFFIX filter.
+
+-- Note that although a LIMIT 10 was added, this still does not reduce the total amount of data scanned (about 457.5 MB) since there are no partitions yet.
+
+-- Click RUN.
+
+-- Confirm the date is properly formatted and the precipitation field is showing non-zero values.
