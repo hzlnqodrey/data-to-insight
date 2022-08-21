@@ -93,3 +93,6 @@ WHERE
 
 # 1. INNER JOIN
 -> Return rows from multiple tables where join condition is met
+
+# 2. LEFT JOIN
+-> Return all rows fron the left table and matched rows from the right table
