@@ -69,3 +69,40 @@ LIMIT 5
  PARSE_DATE("%Y%m%d", date) AS date_formatted,
  fullvisitorId
  FROM `data-to-insights.ecommerce.all_sessions_raw`
+
+--  In this query, note the new option - PARTITION BY a field. The two options available to partition are DATE and TIMESTAMP. The PARSE_DATE function is used on the date field (stored as a string) to get it into the proper DATE type for partitioning.
+
+-- Click on the ecommerce dataset, then select the new partiton_by_day table:
+
+-- f15327a7d4da4db9.png
+
+-- Click on the Details tab.
+
+-- Confirm that you see:
+
+-- Partitioned by: Day
+-- Partitioning on: date_formatted
+-- Partition_by_day3.png
+
+-- Note: Partitions within partitioned tables on your Qwiklabs account will auto-expire after 60 days from the value in your date column. Your personal GCP account with billing-enabled will let you have partitioned tables that don't expire. For the purposes of this lab, the remaining queries will be ran against partitioned tables that have already been created.
+
+-- View data processed with a partitioned table
+-- Run the below query, and note the total bytes to be processed:
+
+#standardSQL
+SELECT *
+FROM `data-to-insights.ecommerce.partition_by_day`
+WHERE date_formatted = '2016-08-01'
+Copied!
+This time ~25 KB or 0.025MB is processed, which is a fraction of what you queried.
+
+-- Now run the below query, and note the total bytes to be processed:
+
+#standardSQL
+SELECT *
+FROM `data-to-insights.ecommerce.partition_by_day`
+WHERE date_formatted = '2018-07-08'
+Copied!
+You should see This query will process 0 B when run.
+
+-- Why is there 0 bytes processed?
