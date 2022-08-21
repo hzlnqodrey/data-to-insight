@@ -102,3 +102,5 @@ WHERE
 
 # 4. OUTER JOIN
 -> Returns all rows from all tables and unmatched rows are displayed as NULL
+
+## note: if you just typed in "JOIN" into sql that will default to an INNER JOIN
