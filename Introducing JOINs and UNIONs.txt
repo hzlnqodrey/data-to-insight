@@ -1,3 +1,19 @@
 JOINs give you fields from different tables
 
 UNIONs add more records to your existing table
+
+### How we create unique identifier of table?
+# -> we need primary key
+
+# create primary key by combining multiple column, creatively
+
+for example:
+
+#standardSQL
+# is usaf-wban combo unique over time?
+
+    SELECT 
+        COUNT(CONCAT(usaf, wban)) AS total_count,
+        COUNT(DISTINCT CONCAT(usaf, wban)) as distinct_stations
+    FROM
+    [some dataset about weathery stations]
