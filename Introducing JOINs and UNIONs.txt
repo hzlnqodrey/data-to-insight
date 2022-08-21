@@ -5,7 +5,7 @@ UNIONs add more records to your existing table
 ### How we create unique identifier of table?
 # -> we need primary key
 
-# create primary key by combining multiple column, creatively
+# create primary key by combining multiple column, creatively to create a unique combination key
 
 for example:
 
@@ -17,3 +17,21 @@ for example:
         COUNT(DISTINCT CONCAT(usaf, wban)) as distinct_stations
     FROM
     [some dataset about weathery stations]
+
+# UNION for vertically merging your data [historically often]
+
+for example:
+
+#standardSQL
+SELECT
+    stn,
+    wban,
+    temp,
+    year,
+FROM
+ [some dataset about weathery stations in year 1920]
+    UNION DISTINCT
+(SELECT stn, wban, temp, year FROM
+ [some dataset about weathery stations in year 1921])
+
+Note: UNION DISTINCT removes duplicates whereas UNION ALL keep every record
