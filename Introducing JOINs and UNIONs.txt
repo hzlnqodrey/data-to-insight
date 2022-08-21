@@ -51,3 +51,7 @@ SELECT
 FROM 
     `bigquery-public-data.noaa_gsod.gsod*` 
     # this will reference to all the gsod tables [gsod1929, gsod1930, .... ,gsod2022]
+
+## FILTERING WILDCARD TABLE with [ _TABLE_SUFFIX_ ]
+    # All gsod table after 1950
+    WHERE _TABLE_SUFFIX_ > '1950'
