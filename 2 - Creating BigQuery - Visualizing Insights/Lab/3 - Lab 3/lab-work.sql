@@ -106,3 +106,5 @@ Copied!
 You should see This query will process 0 B when run.
 
 -- Why is there 0 bytes processed?
+-- check
+-- The query engine knows which partitions already exist and knows that no partition exists for 2018-07-08 (the ecommerce dataset ranges from 2016-08-01 to 2017-08-01).
