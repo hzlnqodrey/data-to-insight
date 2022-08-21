@@ -35,3 +35,19 @@ FROM
  [some dataset about weathery stations in year 1921])
 
 Note: UNION DISTINCT removes duplicates whereas UNION ALL keep every record
+
+### WELL I DONT WANT TO TYPE 100 UNIONS
+
+# solution: use table wildcard prefix/suffix (*) for easy merges
+
+for example:
+
+#standardSQL
+SELECT
+    stn,
+    wban,
+    temp,
+    year
+FROM 
+    `bigquery-public-data.noaa_gsod.gsod*` 
+    # this will reference to all the gsod tables [gsod1929, gsod1930, .... ,gsod2022]
