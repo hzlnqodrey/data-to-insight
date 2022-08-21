@@ -58,3 +58,33 @@ FROM
 
 # be as granular as you can:
     e.g: type .gsod2* instead .gsod* if you only care about the year 2000 onward
+
+
+############## OPERATE TABLE with JOINs
+
+# what is JOIN?
+-> Combine data from separate tables that share a common element into one table
+
+for example:
+
+#standardSQL
+SELECT
+    a.stn,
+    a.wban,
+    a.temp,
+    a.year,
+    b.name,
+    b.state,
+    b.country
+FROM
+    `bigquery-public-data.noaa_gsod.gsod*` AS a
+JOIN
+    `bigquery-public-data.noaa_gsod.stations` AS b
+ON
+    a.stn=b.usaf
+    AND a.wban=b.wban
+WHERE
+    # Filter data
+    state is NOT NULL
+    AND country='US'
+    AND _TABLE_SUFFIX_ > '2015'
