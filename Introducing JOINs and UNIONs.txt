@@ -55,3 +55,6 @@ FROM
 ## FILTERING WILDCARD TABLE with [ _TABLE_SUFFIX_ ]
     # All gsod table after 1950
     WHERE _TABLE_SUFFIX_ > '1950'
+
+# be as granular as you can:
+    e.g: type .gsod2* instead .gsod* if you only care about the year 2000 onward
