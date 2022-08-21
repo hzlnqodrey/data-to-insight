@@ -92,10 +92,13 @@ WHERE
 #### DIfferent types of JOINs
 
 # 1. INNER JOIN
--> Return rows from multiple tables where join condition is met
+-> Returns rows from multiple tables where join condition is met
 
 # 2. LEFT JOIN
--> Return all rows fron the left table and matched rows from the right table
+-> Returns all rows from the left table and matched rows from the right table
 
 # 3. RIGHT JOIN
--> Return all rows from the right table and matched rows from the left table
+-> Returns all rows from the right table and matched rows from the left table
+
+# 4. OUTER JOIN
+-> Returns all rows from all tables and unmatched rows are displayed as NULL
