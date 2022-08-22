@@ -472,12 +472,12 @@ Since there are 3 discount codes to cross join on, you are multiplying the origi
 Note: This behavior isn't limited to cross joins, with a normal join you can unintentionally cross join when the data relationships are many-to-many this can easily result in returning millions or even billions of records unintentionally.
 The solution is to know your data relationships before you join and dont assume keys are unique.
 
-Deduplicating Rows
-At the start of the lab you wrote a query that showed multiple product names for a single SKU. Deduplicating records like this is a common skill for data analysts. Examine one way you can select only one product per SKU.
+-- Deduplicating Rows
+-- At the start of the lab you wrote a query that showed multiple product names for a single SKU. Deduplicating records like this is a common skill for data analysts. Examine one way you can select only one product per SKU.
 
-First, start with the query to show all product names per SKU.
+-- First, start with the query to show all product names per SKU.
 
-Copy and Paste the below query.
+-- Copy and Paste the below query.
 
 #standardSQL
 # recall the earlier query that showed multiple product_names for each SKU
@@ -491,12 +491,12 @@ WHERE v2ProductName IS NOT NULL
 GROUP BY productSKU
 HAVING product_count > 1
 ORDER BY product_count DESC
-Copied!
-Click RUN.
+-- Copied!
+-- Click RUN.
 
-Since most of the product names are extremely similar (and you want to map a single SKU to a single product), write a query to only choose one of the product_names. You will be using this StackOverflow post by Felipe Hoffa as inspiration.
+-- Since most of the product names are extremely similar (and you want to map a single SKU to a single product), write a query to only choose one of the product_names. You will be using this StackOverflow post by Felipe Hoffa as inspiration.
 
-Copy and Paste the below query.
+-- Copy and Paste the below query.
 
 #standardSQL
 # take the one name associated with a SKU
@@ -515,39 +515,39 @@ SELECT k.* FROM (
   FROM product_query x
   GROUP BY productSKU # this is the field you want deduplicated
 );
-Copied!
-Click RUN.
+-- Copied!
+-- Click RUN.
 
-You have successfully deduplicated the product names for each SKU. Experiment with the above query and your own datasets to deduplicate your fields before joining against other datasets.
+-- You have successfully deduplicated the product names for each SKU. Experiment with the above query and your own datasets to deduplicate your fields before joining against other datasets.
 
-Test your understanding
+-- Test your understanding
 
-An effective way to analyze datasets is:
+-- An effective way to analyze datasets is:
 
-Eyeball the data, something will pop out at you
+-- Eyeball the data, something will pop out at you
 
-Identify a key field to base queries off of
+-- Identify a key field to base queries off of
 
-Sort the datasets by size, and then delete the biggest and smallest dataset, combine the rest
+-- Sort the datasets by size, and then delete the biggest and smallest dataset, combine the rest
 
-Click all that apply: What are the pitfalls of joining data?
+-- Click all that apply: What are the pitfalls of joining data?
 
-Unintentional cross join
+-- Unintentional cross join
 
-Permanently deleting the dataset
+-- Permanently deleting the dataset
 
-Counting some data more than once
+-- Counting some data more than once
 
-Missing data that should have been included
+-- Missing data that should have been included
 
 
-A FULL JOIN returns what?
+-- A FULL JOIN returns what?
 
-All records from both tables
+-- All records from both tables
 
-Records that are not in both tables
+-- Records that are not in both tables
 
-Records only in both tables
+-- Records only in both tables
 
-Records from one table minus records in both tables
+-- Records from one table minus records in both tables
 
