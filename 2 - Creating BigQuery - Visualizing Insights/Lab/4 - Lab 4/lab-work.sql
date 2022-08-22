@@ -360,3 +360,194 @@ WHERE website.productSKU IS NULL OR inventory.SKU IS NULL
 -- You have your 819 + 2 = 821 product SKUs
 
 -- LEFT JOIN + RIGHT JOIN = FULL JOIN which returns all records from both tables regardless of matching join keys. You then filter out where you have mismatches on either side
+
+Join pitfall: Unintentional Cross Join
+Not knowing the relationship between data table keys (1:1, 1:N, N:N) can return unexpected results and also significantly reduce query performance.
+
+The last join type is the CROSS JOIN.
+
+Create a new table with a site-wide discount percent that you want to apply across products in the Clearance category.
+
+Replacing the table named qwiklabs-***.
+
+Copy and Paste the below query.
+
+#standardSQL
+CREATE OR REPLACE TABLE ecommerce.site_wide_promotion AS
+SELECT .05 AS discount;
+Copied!
+Click RUN.
+
+In the left pane, site_wide_promotion is now listed in the Resource section under qwiklabs-gcp-xxx > ecommerce.
+
+Copy and Paste the below query to find out how many products are in clearance.
+
+SELECT DISTINCT
+productSKU,
+v2ProductCategory,
+discount
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+CROSS JOIN ecommerce.site_wide_promotion
+WHERE v2ProductCategory LIKE '%Clearance%'
+Copied!
+Click RUN.
+
+
+How many products are in clearance?
+
+82
+
+164
+
+Note: In the syntax there is no join condition (e.g. ON or USING) for a CROSS JOIN. The field is simply multiplied against the first dataset or .05 discount across all items.
+Lets see the impact of unintentionally adding more than one record in the discount table.
+
+Copy and Paste the below query to insert two more records into the promotion table.
+
+#standardSQL
+INSERT INTO ecommerce.site_wide_promotion (discount)
+VALUES (.04),
+       (.03);
+Copied!
+Click RUN.
+
+Next let's view the data values in the promotion table.
+
+Copy and Paste the below query.
+
+#standardSQL
+SELECT discount FROM ecommerce.site_wide_promotion
+Copied!
+Click RUN.
+
+
+How many records were returned?
+
+10
+
+5
+
+What happens when you apply the discount again across all 82 clearance products?
+
+Copy and Paste the below query.
+
+#standardSQL
+# now what happens:
+SELECT DISTINCT
+productSKU,
+v2ProductCategory,
+discount
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+CROSS JOIN ecommerce.site_wide_promotion
+WHERE v2ProductCategory LIKE '%Clearance%'
+Copied!
+Click RUN.
+
+How many products are returned?
+
+Answer: Instead of 82, you now have 246 returned which is more records than your original table started with.
+
+Lets investigate the underlying cause by examining one product SKU.
+
+Copy and Paste the below query.
+
+#standardSQL
+SELECT DISTINCT
+productSKU,
+v2ProductCategory,
+discount
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+CROSS JOIN ecommerce.site_wide_promotion
+WHERE v2ProductCategory LIKE '%Clearance%'
+AND productSKU = 'GGOEGOLC013299'
+Copied!
+Click RUN.
+
+What was the impact of the CROSS JOIN?
+
+Answer:
+
+Since there are 3 discount codes to cross join on, you are multiplying the original dataset by 3
+
+Note: This behavior isn't limited to cross joins, with a normal join you can unintentionally cross join when the data relationships are many-to-many this can easily result in returning millions or even billions of records unintentionally.
+The solution is to know your data relationships before you join and dont assume keys are unique.
+
+Deduplicating Rows
+At the start of the lab you wrote a query that showed multiple product names for a single SKU. Deduplicating records like this is a common skill for data analysts. Examine one way you can select only one product per SKU.
+
+First, start with the query to show all product names per SKU.
+
+Copy and Paste the below query.
+
+#standardSQL
+# recall the earlier query that showed multiple product_names for each SKU
+SELECT
+DISTINCT
+COUNT(DISTINCT v2ProductName) AS product_count,
+STRING_AGG(DISTINCT v2ProductName LIMIT 5) AS product_name,
+productSKU
+FROM `data-to-insights.ecommerce.all_sessions_raw`
+WHERE v2ProductName IS NOT NULL
+GROUP BY productSKU
+HAVING product_count > 1
+ORDER BY product_count DESC
+Copied!
+Click RUN.
+
+Since most of the product names are extremely similar (and you want to map a single SKU to a single product), write a query to only choose one of the product_names. You will be using this StackOverflow post by Felipe Hoffa as inspiration.
+
+Copy and Paste the below query.
+
+#standardSQL
+# take the one name associated with a SKU
+WITH product_query AS (
+  SELECT
+  DISTINCT
+  v2ProductName,
+  productSKU
+  FROM `data-to-insights.ecommerce.all_sessions_raw`
+  WHERE v2ProductName IS NOT NULL
+)
+SELECT k.* FROM (
+  # aggregate the products into an array and
+  # only take 1 result
+  SELECT ARRAY_AGG(x LIMIT 1)[OFFSET(0)] k
+  FROM product_query x
+  GROUP BY productSKU # this is the field you want deduplicated
+);
+Copied!
+Click RUN.
+
+You have successfully deduplicated the product names for each SKU. Experiment with the above query and your own datasets to deduplicate your fields before joining against other datasets.
+
+Test your understanding
+
+An effective way to analyze datasets is:
+
+Eyeball the data, something will pop out at you
+
+Identify a key field to base queries off of
+
+Sort the datasets by size, and then delete the biggest and smallest dataset, combine the rest
+
+Click all that apply: What are the pitfalls of joining data?
+
+Unintentional cross join
+
+Permanently deleting the dataset
+
+Counting some data more than once
+
+Missing data that should have been included
+
+
+A FULL JOIN returns what?
+
+All records from both tables
+
+Records that are not in both tables
+
+Records only in both tables
+
+Records from one table minus records in both tables
+
