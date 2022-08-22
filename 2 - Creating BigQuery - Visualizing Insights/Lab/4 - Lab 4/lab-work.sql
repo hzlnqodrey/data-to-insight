@@ -167,3 +167,196 @@ FROM (
 GROUP BY productSKU
 -- Copied!
 -- Click RUN.
+
+-- Join pitfall solution: use distinct SKUs before joining
+-- What are the options to solve your triple counting dilemma? First, you need to only select distinct SKUs from the website before joining on other datasets.
+
+-- Write a query to return the count of distinct productSKU from data-to-insights.ecommerce.all_sessions_raw.
+
+-- Possible Solution:
+
+#standardSQL
+SELECT
+COUNT(DISTINCT website.productSKU) AS distinct_sku_count
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+Copied!
+Answer: 1,909 distinct SKUs from the website dataset
+
+-- Join pitfall: Losing data records after a join
+-- Now youre ready to join against your product inventory dataset again.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+SELECT DISTINCT
+website.productSKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+-- Copied!
+-- Click RUN. How many records were returned? All 1,909 distinct SKUs?
+
+-- Answer: No, just 1,090 records
+
+-- You lost 819 SKUs after joining the datasets, investigate by adding more specificity in your fields.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+# pull ID fields from both tables
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.SKU AS inventory_SKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+# IDs are present in both tables, how can we dig deeper?
+-- Copied!
+-- Click RUN.
+
+-- It appears the SKUs are present in both of those datasets after the join.
+
+-- Join pitfall solution: Selecting the correct join type and filtering for NULL
+-- The default JOIN type is an INNER JOIN which returns records only if there is a match on both the left and the right tables that are joined.
+
+-- Rewrite the previous query to use a different join type to include all records from the website table, regardless of whether there is a match on a product inventory SKU record. Join type options: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, CROSS JOIN
+
+-- Possible Solution:
+
+#standardSQL
+# the secret is in the JOIN type
+# pull ID fields from both tables
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.SKU AS inventory_SKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+LEFT JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+-- Copied!
+-- Click RUN.
+
+-- You have successfully used a LEFT JOIN to return all of the original 1,909 website SKUs in your results.
+
+
+-- What do you notice about some of SKUs in the inventory SKU column?
+
+-- Many inventory SKU values are NULL
+
+-- Many inventory SKU values are Not NULL
+
+-- Many inventory Sku values are missing
+
+-- How many SKUs are missing from your product inventory set?
+
+-- Write a query to filter on NULL values from the inventory table.
+
+-- Possible Solution:
+
+#standardSQL
+# find product SKUs in website table but not in product inventory table
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.SKU AS inventory_SKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+LEFT JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+WHERE inventory.SKU IS NULL
+-- Copied!
+-- Click RUN.
+
+
+-- How many products are missing from your product inventory dataset?
+
+-- 819
+
+-- 700
+
+-- 0
+
+-- Copy and Paste the below query to confirm using one of the specific SKUs from the website dataset.
+
+#standardSQL
+# you can even pick one and confirm
+SELECT * FROM `data-to-insights.ecommerce.products`
+WHERE SKU = 'GGOEGATJ060517'
+# query returns zero results
+-- Copied!
+-- Click RUN.
+
+-- Why might the product inventory dataset be missing SKUs?
+
+-- Answer: Unfortunately, there is no easy answer. It is most likely a business-related question:
+
+-- Some SKUs could be digital products that you don't store in inventory
+-- Old products you sold in past website orders are no longer offered in current inventory
+-- Legitimate missing data from inventory and should be tracked
+-- Are there any products are in the product inventory dataset but missing from the website?
+
+-- Write a query using a different join type to investigate.
+
+-- Possible Solution:
+
+#standardSQL
+# reverse the join
+# find records in website but not in inventory
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.SKU AS inventory_SKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+RIGHT JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+WHERE website.productSKU IS NULL
+-- Copied!
+-- Click RUN.
+
+-- Answer: Yes. There are two product SKUs missing from the website dataset
+
+-- Next, add more fields from the product inventory dataset for more details.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+# what are these products?
+# add more fields in the SELECT STATEMENT
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.*
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+RIGHT JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+WHERE website.productSKU IS NULL
+-- Copied!
+-- Click RUN.
+
+-- Why would the below products be missing from the ecommerce website dataset?
+
+-- query_result.png
+
+-- Possible answers:
+
+-- One new product (no orders, no sentimentScore) and one product that is "in store only"
+-- Another is a new product with 0 orders
+-- Why would the new product not show up on your website dataset?
+
+-- The website dataset is past order transactions by customers brand new products which have never been sold won't show up in web analytics until they're viewed or purchased
+-- You typically will not see RIGHT JOINs in production queries. You would simply just do a LEFT JOIN and switch the ordering of the tables.
+-- What if you wanted one query that listed all products missing from either the website or inventory?
+
+-- Write a query using a different join type.
+
+-- Possible Solution:
+
+#standardSQL
+SELECT DISTINCT
+website.productSKU AS website_SKU,
+inventory.SKU AS inventory_SKU
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+FULL JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+WHERE website.productSKU IS NULL OR inventory.SKU IS NULL
+-- Copied!
+-- Click RUN.
+
+-- You have your 819 + 2 = 821 product SKUs
+
+-- LEFT JOIN + RIGHT JOIN = FULL JOIN which returns all records from both tables regardless of matching join keys. You then filter out where you have mismatches on either side
