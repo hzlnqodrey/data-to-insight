@@ -111,3 +111,59 @@ WHERE productSKU = 'GGOEGPJC019099'
 -- 7" Dog Frisbee	GGOEGPJC019099
 -- Google 7-inch Dog Flying Disc Blue	GGOEGPJC019099
 -- From the query results, it looks like there are three different names for the same product. In this example, there is a special character in one name and a slightly different name for another:
+
+-- Joining website data against your product inventory list
+-- See the impact of joining on a dataset with multiple products for a single SKU. First, explore the product inventory dataset (the products table) to see if this SKU is unique there.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+# join in another table
+# products (has inventory)
+SELECT * FROM `data-to-insights.ecommerce.products`
+WHERE SKU = 'GGOEGPJC019099'
+-- Copied!
+-- Click RUN.
+
+-- Join pitfall: Unintentional many-to-one SKU relationship
+-- Next, join the inventory dataset against your website product names and SKUs so you can have the inventory stock level associated with each product for sale on the website.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+SELECT DISTINCT
+website.v2ProductName,
+website.productSKU,
+inventory.stockLevel
+FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+JOIN `data-to-insights.ecommerce.products` AS inventory
+ON website.productSKU = inventory.SKU
+WHERE productSKU = 'GGOEGPJC019099'
+-- Copied!
+-- Click RUN.
+
+-- What happens when you join the website table and the product inventory table on SKU? Do you now have inventory stock levels for the product?
+
+-- Answer: Yes but the stockLevel is showing three times (one for each record)!
+
+-- Next, run a query that shows the total stock level for each item in inventory.
+
+-- Copy and Paste the below query.
+
+#standardSQL
+SELECT
+  productSKU,
+  SUM(stockLevel) AS total_inventory
+FROM (
+  SELECT DISTINCT
+  website.v2ProductName,
+  website.productSKU,
+  inventory.stockLevel
+  FROM `data-to-insights.ecommerce.all_sessions_raw` AS website
+  JOIN `data-to-insights.ecommerce.products` AS inventory
+  ON website.productSKU = inventory.SKU
+  WHERE productSKU = 'GGOEGPJC019099'
+)
+GROUP BY productSKU
+-- Copied!
+-- Click RUN.
