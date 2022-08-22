@@ -88,3 +88,26 @@ ORDER BY product_count DESC
 -- Answer: Yes, it looks like there are quite a few SKUs that have more than one product name. Several of the product names appear to be closely related with a few misspellings (e.g. Waterproof Gear Bag vs Waterproof Gear Bag).
 
 -- You see why this could be an issue in the next section.
+
+-- Pitfall: non-unique key
+-- A SKU is designed to uniquely identify one product and will be the basis of your join condition when you join against other tables. Having a non-unique key can cause serious data issues.
+
+-- Write a query to identify all the product names for the SKU 'GGOEGPJC019099'.
+
+-- Possible Solution:
+
+#standardSQL
+# multiple records for this SKU
+SELECT DISTINCT
+v2ProductName,
+productSKU
+FROM `data-to-insights.ecommerce.all_sessions_raw`
+WHERE productSKU = 'GGOEGPJC019099'
+-- Copied!
+-- Click RUN.
+
+-- v2ProductName	productSKU
+-- 7" Dog Frisbee	GGOEGPJC019099
+-- 7" Dog Frisbee	GGOEGPJC019099
+-- Google 7-inch Dog Flying Disc Blue	GGOEGPJC019099
+-- From the query results, it looks like there are three different names for the same product. In this example, there is a special character in one name and a slightly different name for another:
