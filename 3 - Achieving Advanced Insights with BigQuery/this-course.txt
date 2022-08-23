@@ -1,0 +1,4 @@
+This Course will be focused on:
+    - Window Function
+    - Statistical Function
+    - Approximation Function
