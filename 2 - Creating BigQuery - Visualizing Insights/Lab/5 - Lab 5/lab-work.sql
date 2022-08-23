@@ -1,22 +1,22 @@
 -- Data to Insights: Unioning and Joining Datasets v1.1
 
-Practice Unioning and Joining Datasets
-Open BigQuery Console
-In the Google Cloud Console, select Navigation menu > BigQuery.
-The Welcome to BigQuery in the Cloud Console message box opens. This message box provides a link to the quickstart guide and lists UI updates.
+-- Practice Unioning and Joining Datasets
+-- Open BigQuery Console
+-- In the Google Cloud Console, select Navigation menu > BigQuery.
+-- The Welcome to BigQuery in the Cloud Console message box opens. This message box provides a link to the quickstart guide and lists UI updates.
 
-Click Done.
-Step 1
-Compose the query in BigQuery EDITOR.
+-- Click Done.
+-- Step 1
+-- Compose the query in BigQuery EDITOR.
 
-Ensure #standardSQL is set as your first line of code.
+-- Ensure #standardSQL is set as your first line of code.
 
-Step 2
-Write a Query that will count the number of tax filings by calendar year for all IRS Form 990 filings.
+-- Step 2
+-- Write a Query that will count the number of tax filings by calendar year for all IRS Form 990 filings.
 
-Use the below partially-written query as a guide.
+-- Use the below partially-written query as a guide.
 
-Hint: You will need to use Table Wildcards * with _TABLE_SUFFIX.
+-- Hint: You will need to use Table Wildcards * with _TABLE_SUFFIX.
 
 #standardSQL
 # UNION Wildcard and returning a table suffix
