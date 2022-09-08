@@ -2,3 +2,16 @@ This Course will be focused on:
     - Window Function
     - Statistical Function
     - Approximation Function
+
+
+#### Advanced Function (Statistical, Analytics, and user-defined)
+
+Statistical function example:
+    SELECT
+        STDDEV(noemployeesw3cnt) AS st_dev_employee_count,
+        CORR(totprgmrevenue, totfuncexpns) AS corr_rev_expensses
+    FROM
+        ''
+
+    ## STDDEV - Standard Deviation
+    ## CORR - Correlation [in example above, how correlated the program revenue with total functional expenses]
