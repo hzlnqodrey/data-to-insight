@@ -94,3 +94,9 @@ ON
 WHERE
     # filter out duplicate records
     duplicate.ein IS NULL
+
+
+########### BigQuery versus traditional relational data architecture
+
+# Normalize table
+-> basically just break appart big fatass table to small column relational table
