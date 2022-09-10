@@ -118,3 +118,26 @@ JSON result from the query above:
     "splits": ["23.7", "26.1", "27.0", "29.3"]
   }]
 }]
+
+-- Lab Question: STRUCT()
+-- Answer the below questions using the racing.race_results table you created previously.
+
+-- Task: Write a query to COUNT how many racers were there in total.
+
+-- To start, use the below partially written query:
+
+#standardSQL
+SELECT COUNT(participants.name) AS racer_count
+FROM racing.race_results
+-- Copied!
+-- Hint: Remember you will need to cross join in your struct name as an additional data source after the FROM.
+
+Possible Solution:
+
+#standardSQL
+SELECT COUNT(p.name) AS racer_count
+FROM racing.race_results AS r, UNNEST(r.participants) AS p
+Copied!
+Row	racer_count
+1	8
+Answer: There were 8 racers who ran the race.
