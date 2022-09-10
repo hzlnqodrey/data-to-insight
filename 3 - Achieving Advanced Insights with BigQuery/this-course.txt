@@ -47,3 +47,50 @@ ORDER BY 2 DESC LIMIT 10
 ## if they're stored in Google Cloud Storage bucket
 
 ## Using WITH clauses (CTEs) and Subqueries | CTE = Common Table Expression
+
+example:
+
+#standarSQL
+#CTEs
+
+WITH
+
+    # 2015 Fillings joined with orgs detail
+    irs_990_2015_ein AS (
+        SELECT *
+        FROM
+            `bigquery-public-data.irs_990.irs_990_2015`
+        JOIN
+            `bigquery-public-data.irs_990.irs_990_ein` USING (ein)
+    ),
+
+    # duplicate EINs in the orgs detail
+    duplicate AS (
+        SELECT
+            ein AS ein,
+            COUNT(ein) as ein_count
+        FROM
+            irs_990_2015_ein
+        GROUP BY
+            ein
+        HAVING
+            ein_count > 1
+    )
+
+# return results to store in a permanent table
+SELECT
+    irs_990.ein AS ein,
+    irs_990.name AS name,
+    irs_990.noemployeesw3cnt AS num_employees,
+    irs_990.grsrcptspublicuse AS gross_receipts,
+
+    # more field ommited for brevity
+FROM 
+    irs_990_2015 AS irs_990
+LEFT JOIN
+    duplicates
+ON
+    irs_990.ein = duplicates.ein
+WHERE
+    # filter out duplicate records
+    duplicate.ein IS NULL
