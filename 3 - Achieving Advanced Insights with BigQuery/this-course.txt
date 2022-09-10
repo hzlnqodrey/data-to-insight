@@ -100,3 +100,11 @@ WHERE
 
 # Normalize table
 -> basically just break appart big fatass table to small column relational table
+
+# BigQuery is column-based storage and built for speed
+
+## Array and Struct
+
+#standarSQL
+SELECT 
+    STRUCT(35 AS age, 'Jacob' AS name) AS Customer
