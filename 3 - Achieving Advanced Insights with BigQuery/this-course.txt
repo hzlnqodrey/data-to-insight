@@ -15,3 +15,9 @@ Statistical function example:
 
     ## STDDEV - Standard Deviation
     ## CORR - Correlation [in example above, how correlated the program revenue with total functional expenses]
+
+## RANK() Advanced function, for Aggregating over groups of rows
+
+SELECT firstname, departement, startdate
+    RANK() OVER ( PARTITION BY departement ORDER BY startdate ) AS rank
+FROM employees
