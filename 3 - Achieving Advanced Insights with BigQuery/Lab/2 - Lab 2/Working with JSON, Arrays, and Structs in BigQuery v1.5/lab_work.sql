@@ -141,3 +141,68 @@ Copied!
 Row	racer_count
 1	8
 Answer: There were 8 racers who ran the race.
+
+Unpacking ARRAYs with UNNEST( )
+Now that you are familiar working with STRUCTs, it's time to apply that same knowledge of unpacking ARRAYs to some traditional arrays.
+
+Recall that the UNNEST operator takes an ARRAY and returns a table, with one row for each element in the ARRAY. This will allow you to perform normal SQL operations like:
+
+Aggregating values within an ARRAY
+Filtering arrays for particular values
+Ordering and sorting arrays
+As a reminder, an Array is an ordered list of elements that share a data type. Here is a string array of the 8 racer names.
+
+['Rudisha','Makhloufi','Murphy','Bosse','Rotich','Lewandowski','Kipketer','Berian']
+Copied!
+You can create arrays in BigQuery by adding brackets [ ] and comma separating values.
+
+Try the below query and be sure to note how many rows are outputted. Will it be 8 rows?
+
+#standardSQL
+SELECT
+['Rudisha','Makhloufi','Murphy','Bosse','Rotich','Lewandowski','Kipketer','Berian'] AS normal_array
+Copied!
+It is a single row with 8 array elements:
+
+Row	normal_array
+1	Rudisha
+Makhloufi
+Murphy
+Bosse
+Rotich
+Lewandowski
+Kipketer
+Berian
+Tip: If you already have a field that isn't in an array format you can aggregate those values into an array by using ARRAY_AGG()
+
+In order to find the racers whose names begin with the letter M, you need to unpack the above array into individual rows so you can use a WHERE clause.
+
+Unpacking the array is done by wrapping the array (or the name of the array) with UNNEST() as shown below. Run the below query and note how many rows are returned.
+
+#standardSQL
+SELECT * FROM
+UNNEST(['Rudisha','Makhloufi','Murphy','Bosse','Rotich','Lewandowski','Kipketer','Berian']) AS unnested_array_of_names
+Copied!
+And you should see:
+
+Row	unnested_array_of_names
+1	Rudisha
+2	Makhloufi
+3	Murphy
+4	Bosse
+5	Rotich
+6	Lewandowski
+7	Kipketer
+8	Berian
+You have successfully unnested the array. This is also called flattening the array.
+
+Now add a normal WHERE clause to filter these rows, and run the query:
+
+#standardSQL
+SELECT * FROM
+UNNEST(['Rudisha','Makhloufi','Murphy','Bosse','Rotich','Lewandowski','Kipketer','Berian']) AS unnested_array_of_names
+WHERE unnested_array_of_names LIKE 'M%'
+Copied!
+Row	unnested_array_of_names
+1	Makhloufi
+2	Murphy
