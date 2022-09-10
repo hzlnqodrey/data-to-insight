@@ -45,3 +45,5 @@ ORDER BY 2 DESC LIMIT 10
 ## sooo some fun example if you want to have a shot in sentiment analysis by looking twitter and reddit comments or seeing
 ## the closeness between words, you could use JavaScript library inside BigQuery. You can invoke those or call those JS Libraries
 ## if they're stored in Google Cloud Storage bucket
+
+## Using WITH clauses (CTEs) and Subqueries | CTE = Common Table Expression
