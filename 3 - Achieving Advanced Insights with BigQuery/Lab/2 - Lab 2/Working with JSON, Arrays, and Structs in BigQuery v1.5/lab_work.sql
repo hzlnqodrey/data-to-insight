@@ -41,3 +41,22 @@ JSON result from the query above:
   "fruit_array": ["orange", "apple"],
   "total_cost": ["5.55"]
 }]
+
+-- Uploading JSON files
+-- What if you had a JSON file that you needed to ingest into BigQuery? You'll try this now.
+
+-- Create a new table in the fruit_store dataset. To create a table, click on the View actions icon next to the fruit_store dataset and select Open. Then click Create table from the right panel.
+
+-- Note: You may have to widen your browser window to see the Create table option.
+-- Add the following details for the table:
+
+-- Source: Choose Google Cloud Storage in the Create table from dropdown.
+-- Select file from GCS bucket: data-insights-course/labs/optimizing-for-performance/shopping_cart.json
+-- File format: JSONL (Newline delimited JSON)
+-- Call the new Table name fruit_details. Under Schema, click on the checkbox of Auto detect
+
+-- Click Create table.
+
+-- Click on the table fruit_details.
+
+-- In the schema, note that fruit_array is marked as REPEATED which means it is an array.
