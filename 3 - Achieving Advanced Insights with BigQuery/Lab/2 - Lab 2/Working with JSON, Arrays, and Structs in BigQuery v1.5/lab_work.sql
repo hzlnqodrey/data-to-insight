@@ -30,3 +30,14 @@ SELECT person, fruit_array, total_cost FROM `data-to-insights.advanced.fruit_sto
 -- Click Run.
 
 -- After viewing the results, click the JSON tab to view the nested structure of the results.
+
+JSON result from the query above:
+[{
+  "person": ["sally"],
+  "fruit_array": ["raspberry", "blackberry", "strawberry", "cherry"],
+  "total_cost": ["10.99"]
+}, {
+  "person": ["frederick"],
+  "fruit_array": ["orange", "apple"],
+  "total_cost": ["5.55"]
+}]
