@@ -21,3 +21,24 @@ Statistical function example:
 SELECT firstname, departement, startdate
     RANK() OVER ( PARTITION BY departement ORDER BY startdate ) AS rank
 FROM employees
+
+## BigQuery User Defined Function(s) - UDFs
+
+CREATE FUNCTION d2i_demo.nlp_compromise_people(str STRING)
+    RETURN ARRAY<STRING> LANGUAGE js AS '''
+        return nlp(str).people().out('topk').map(x => x.normal)
+    '''
+    OPTION(
+        library="gs://cloud-training/datatoinsights/assets/compromise.min.11.14.0.js"
+    );
+
+SELECT name, COUNT(*) c
+FROM (
+    SELECT d2i_demo.nlp_compromise_people(title) as names
+    FROM `d2i_demo.reddit_post`
+    WHERE subreddit = 'movies'
+), UNNEST(names) name
+
+WHERE name LIKE '% %' GROUP BY 1
+ORDER BY 2 DESC LIMIT 10
+
