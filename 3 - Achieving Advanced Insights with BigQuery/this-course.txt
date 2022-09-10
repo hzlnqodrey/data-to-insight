@@ -108,3 +108,17 @@ WHERE
 #standarSQL
 SELECT 
     STRUCT(35 AS age, 'Jacob' AS name) AS Customer
+
+## Struct can also contains an ARRAY
+
+#standarSQL
+SELECT
+    STRUCT(35 AS age, 'Jacob' AS name, ['apple', 'pear', 'peach'] AS items) AS Customer
+
+The output will be like this
+-----+----------------+-----------------+------------------+
+Row  |  Customer.age  |  Cutsomer.name  |  Customer.items  |
+-----+----------------+-----------------+------------------+
+1       35               Jacob             Apple
+                                           Pear
+                                           Peach
