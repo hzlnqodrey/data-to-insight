@@ -245,3 +245,33 @@ Copied!
 Row	name	total_race_time
 1	Rudisha	102.19999999999999
 2	Rotich	103.6
+
+-- #######################################
+
+Filtering within ARRAY values
+You happened to see that the fastest lap time recorded for the 800 M race was 23.2 seconds, but you did not see which runner ran that particular lap. Create a query that returns that result.
+
+Complete the partially written query:
+
+#standardSQL
+SELECT
+  p.name,
+  split_time
+FROM racing.race_results AS r
+, r.participants AS p
+, p.splits AS split_time
+WHERE split_time = ;
+Copied!
+Possible Solution:
+
+#standardSQL
+SELECT
+  p.name,
+  split_time
+FROM racing.race_results AS r
+, UNNEST(r.participants) AS p
+, UNNEST(p.splits) AS split_time
+WHERE split_time = 23.2;
+Copied!
+Row	name	split_time
+1	Kipketer	23.2
