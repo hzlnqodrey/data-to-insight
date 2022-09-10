@@ -206,3 +206,42 @@ Copied!
 Row	unnested_array_of_names
 1	Makhloufi
 2	Murphy
+
+-- ################################################################
+
+Lab Question: Unpacking ARRAYs with UNNEST( )
+Write a query that will list the total race time for racers whose names begin with R. Order the results with the fastest total time first. Use the UNNEST() operator and start with the partially written query below.
+
+Complete the query:
+
+#standardSQL
+SELECT
+  p.name,
+  SUM(split_times) as total_race_time
+FROM racing.race_results AS r
+, r.participants AS p
+, p.splits AS split_times
+WHERE
+GROUP BY
+ORDER BY
+;
+Copied!
+Hint:
+
+You will need to unpack both the struct and the array within the struct as data sources after your FROM clause
+Be sure to use aliases where appropriate
+Possible Solution:
+#standardSQL
+SELECT
+  p.name,
+  SUM(split_times) as total_race_time
+FROM racing.race_results AS r
+, UNNEST(r.participants) AS p
+, UNNEST(p.splits) AS split_times
+WHERE p.name LIKE 'R%'
+GROUP BY p.name
+ORDER BY total_race_time ASC;
+Copied!
+Row	name	total_race_time
+1	Rudisha	102.19999999999999
+2	Rotich	103.6
