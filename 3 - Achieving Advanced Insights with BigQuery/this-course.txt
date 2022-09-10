@@ -42,3 +42,6 @@ FROM (
 WHERE name LIKE '% %' GROUP BY 1
 ORDER BY 2 DESC LIMIT 10
 
+## sooo some fun example if you want to have a shot in sentiment analysis by looking twitter and reddit comments or seeing
+## the closeness between words, you could use JavaScript library inside BigQuery. You can invoke those or call those JS Libraries
+## if they're stored in Google Cloud Storage bucket
