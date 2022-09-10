@@ -122,3 +122,22 @@ Row  |  Customer.age  |  Cutsomer.name  |  Customer.items  |
 1       35               Jacob             Apple
                                            Pear
                                            Peach
+
+
+### Filtering the Data with Struct and Array
+
+#standarSQL
+
+WITH order AS (
+    SELECT
+        [
+            STRUCT(35 AS age, 'Jacob' AS name, ['apple', 'pear', 'peach'] AS items),
+            STURCT(33 AS age, 'Miranda AS name, ['ice cream', 'water', 'pineapple'] AS items)
+        ] AS customers
+)
+
+SELECT 
+    customers
+FROM order AS o
+CROSS JOIN UNNEST(o.customers) AS customers
+WHERE 'ice cream' IN UNNEST(customers.items)
