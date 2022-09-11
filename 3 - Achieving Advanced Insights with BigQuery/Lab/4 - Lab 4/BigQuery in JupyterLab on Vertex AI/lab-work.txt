@@ -7,3 +7,24 @@ In this lab, you learn to perform the following tasks:
 Instantiate a Jupyter notebook on Vertex AI.
 
 Execute a BigQuery query from within a Jupyter notebook and process the output using Pandas.
+
+Start a JupyterLab Notebook Instance
+Click on the Navigation Menu.
+
+Navigate to Artificial Intelligence, Vertex AI, then to Workbench.
+
+You'll be redirected to User-Managed Notebooks tab on the main page for Notebooks on Vertex AI.
+
+When the tab loads if you notice a link entitled Enable Notebooks API, click that link to allow the background Notebooks API to be upgraded. The upgrade will occur promptly.
+
+Click on the New Instance icon on the top of the page.
+
+In the menu that pops down, select the Python 3 option.
+
+A screen entitled New notebook will be shown. Leave the default options and click on Create.
+
+After a few minutes, the Vertex AI console will have your instance name followed by Open Jupyterlab. Click Open Jupyterlab.
+
+A new tab will open in your browser with the JupyterLab environment. Select Python 3 under Notebook.
+
+Your notebook is now set up.
