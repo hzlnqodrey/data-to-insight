@@ -1,0 +1,9 @@
+Overview
+The purpose of this lab is to show learners how to instantiate a Jupyter notebook running on Google Cloud's Vertex AI service. To aid in the demonstration, a dataset with various flight departure and arrival times will be leveraged.
+
+Objectives
+In this lab, you learn to perform the following tasks:
+
+Instantiate a Jupyter notebook on Vertex AI.
+
+Execute a BigQuery query from within a Jupyter notebook and process the output using Pandas.
