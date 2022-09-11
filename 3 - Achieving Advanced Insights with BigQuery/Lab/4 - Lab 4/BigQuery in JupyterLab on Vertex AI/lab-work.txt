@@ -28,3 +28,103 @@ After a few minutes, the Vertex AI console will have your instance name followed
 A new tab will open in your browser with the JupyterLab environment. Select Python 3 under Notebook.
 
 Your notebook is now set up.
+
+
+Overview
+Set up your environment
+Start a JupyterLab Notebook Instance
+Execute a BigQuery query
+Make a Plot with Pandas
+End your lab
+BigQuery in JupyterLab on Vertex AI
+1 hour 15 minutes
+Free
+Overview
+The purpose of this lab is to show learners how to instantiate a Jupyter notebook running on Google Cloud's Vertex AI service. To aid in the demonstration, a dataset with various flight departure and arrival times will be leveraged.
+
+Objectives
+In this lab, you learn to perform the following tasks:
+
+Instantiate a Jupyter notebook on Vertex AI.
+
+Execute a BigQuery query from within a Jupyter notebook and process the output using Pandas.
+
+Set up your environment
+For each lab, you get a new Google Cloud project and set of resources for a fixed time at no cost.
+
+Sign in to Qwiklabs using an incognito window.
+
+Note the lab's access time (for example, 02:00:00), and make sure you can finish within that time. There is no pause feature. You can restart if needed, but you have to start at the beginning.
+
+When ready, click Start lab.
+
+Note your lab credentials (Username and Password). You will use them to sign in to the Google Cloud Console.
+
+Click Open Google Console.
+
+Click Use another account and copy/paste credentials for this lab into the prompts. If you use other credentials, you'll receive errors or incur charges.
+
+Accept the terms and skip the recovery resource page.
+
+Do not click End Lab unless you have finished the lab or want to restart it. This clears your work and removes the project.
+
+Open BigQuery Console
+In the Google Cloud Console, on the Navigation menu , click BigQuery. The Welcome to BigQuery in the Cloud Console dialog opens. This dialog provides a link to the quickstart guide and lists UI updates.
+
+Click Done to close the dialog.
+
+Start a JupyterLab Notebook Instance
+Click on the Navigation Menu.
+
+Navigate to Artificial Intelligence, Vertex AI, then to Workbench.
+
+You'll be redirected to User-Managed Notebooks tab on the main page for Notebooks on Vertex AI.
+
+When the tab loads if you notice a link entitled Enable Notebooks API, click that link to allow the background Notebooks API to be upgraded. The upgrade will occur promptly.
+
+Click on the New Instance icon on the top of the page.
+
+In the menu that pops down, select the Python 3 option.
+
+A screen entitled New notebook will be shown. Leave the default options and click on Create.
+
+After a few minutes, the Vertex AI console will have your instance name followed by Open Jupyterlab. Click Open Jupyterlab.
+
+A new tab will open in your browser with the JupyterLab environment. Select Python 3 under Notebook.
+
+Your notebook is now set up.
+
+Click Check my progress to verify the objective.
+Start a JupyterLab Notebook Instance.
+
+Execute a BigQuery query
+Execute the following Python install command by hitting Shift + Enter in the first cell of the notebook to install the google-cloud-bigquery library at version 1.25.0.
+
+!pip install google-cloud-bigquery==1.25.0 --use-feature=2020-resolver
+Copied!
+Note: You may safely ignore the following notifications: WARNING: --use-feature=2020-resolver... and ERROR: pip's dependency resolver....
+Restart the kernel by clicking Restart kernel icon > Restart.
+
+1.png
+
+Enter the following query in the second cell of the notebook.
+
+%%bigquery df
+SELECT
+  depdelay as departure_delay,
+  COUNT(1) AS num_flights,
+  APPROX_QUANTILES(arrdelay, 10) AS arrival_delay_deciles
+FROM
+  `cloud-training-demos.airline_ontime_data.flights`
+WHERE
+ depdelay is not null
+GROUP BY
+  depdelay
+HAVING
+  num_flights > 100
+ORDER BY
+  depdelay ASC
+Copied!
+The command makes use of the magic function %%bigquery. Magic functions in notebooks provide an alias for a system command. In this case, %%bigquery runs the query in the cell in BigQuery and stores the output in a Pandas DataFrame object named df.
+
+Run the cell by hitting Shift + Enter, when the cursor is in the cell. Alternatively, if you navigate to the Run tab you can click on Run Selected Cells. Note the keyboard shortcut for this action in case it is not Shift + Enter. There should be no output when executing the command.
