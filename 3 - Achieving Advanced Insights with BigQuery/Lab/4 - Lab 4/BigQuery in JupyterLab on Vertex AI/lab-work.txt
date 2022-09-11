@@ -133,7 +133,7 @@ View the first five rows of the query's output by executing the following code i
 
 df.head()
 Copied!
-df_head.png
+2.png
 
 Make a Plot with Pandas
 We're going to use the Pandas DataFrame containing our query output to build a plot that depicts how arrival delays correspond to departure delays. Before continuing, if you are unfamiliar with Pandas the Ten Minute Getting Started Guide is recommended reading.
@@ -155,4 +155,4 @@ Before plotting the contents of our DataFrame, we'll want to drop extreme values
 df.drop(labels=['0%', '100%'], axis=1, inplace=True)
 df.plot(x='departure_delay', xlim=(-30,50), ylim=(-50,50));
 Copied!
-plot.png
+3.png
