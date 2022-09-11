@@ -163,6 +163,14 @@ Since we want to relate departure delay times to arrival delay times we have to 
 
 df = pd.concat([df['departure_delay'], percentiles], axis=1)
 df.head()
+
+departure_delay	0	10	20	30	40	50	60	70	80	90	100
+0	-60.0	-137.0	-65.0	-60.0	-55.0	-36.0	-16.0	-8.0	-4.0	1.0	8.0	54.0
+1	-45.0	-71.0	-55.0	-50.0	-48.0	-45.0	-43.0	-39.0	-32.0	-14.0	2.0	45.0
+2	-44.0	-62.0	-53.0	-50.0	-48.0	-46.0	-42.0	-40.0	-33.0	-22.0	-3.0	76.0
+3	-43.0	-71.0	-55.0	-51.0	-48.0	-45.0	-43.0	-38.0	-33.0	-18.0	-5.0	48.0
+4	-42.0	-62.0	-51.0	-48.0	-46.0	-43.0	-41.0	-38.0	-33.0	-20.0	-3.0	32.0
+
 Copied!
 Before plotting the contents of our DataFrame, we'll want to drop extreme values stored in the 0% and 100% fields. Execute the following code in a new cell:
 
